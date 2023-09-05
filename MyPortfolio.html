@@ -20,6 +20,7 @@ hp<!DOCTYPE HTML>
         /* width: 100%; */
         overflow-x:scroll;
         height: 1500px;
+        /* background:transparent; */
     }
 
     .container {
@@ -38,7 +39,7 @@ hp<!DOCTYPE HTML>
         padding-right: 20px;
         transform: translateY(-210px);
         position: relative;
-        
+        /* z-index:1; */
     }
 
     .container-atas .matahari {
@@ -269,16 +270,27 @@ hp<!DOCTYPE HTML>
         .perahu{
             overflow: hidden;
         }*/
+        .perlindunganmata {
+            transform:translateY(-34px);
+        }
         .container-isi {
             transform:scale(0.8);
             left:-61%;
             top:25%;
         }
+        /* #ChangeToDark {
+            transform:translateX(100px)translateY(30px);
+        } */
+        /* #ChangeToLight {
+
+        } */
         .dropdown {
             left:125%;
+            /* float:left;
+            overflow:hidden; */
         }
         .identitas-diri {
-            top:-10%;
+            transform:translateY(-40%);
             padding-bottom:8%;
             padding-top:1%;
         }
@@ -291,9 +303,9 @@ hp<!DOCTYPE HTML>
             top:-41%;
         }
         .foto-h2 {
-            transform:scale(0.6);
+            transform:scale(0.55);
             top:-48%;
-            left:-30.5%;
+            left:-33%;
         }
         .about {
             margin-top:-35%;
@@ -429,16 +441,33 @@ hp<!DOCTYPE HTML>
         }
         .my-services {
             background:linear-gradient(to right,pink,yellow,red,black,white);
-            height:520px;
-            overflow:scroll;
             margin-left:0%;
+            position:relative;
+            width:40%;
+        }
+        .teks-gambar-services-1 {
+            margin-left:26%;
+        }
+        .my-services-p1 {
+            width:50%;
+            left:10%;
         }
         .my-services-h3 {
             transform:scale(0.8);
-            margin-left:-6%;
+            margin-left:2%
         }
-        .my-services img {
-            margin-left:0.5%;
+        .teks-gambar-website-wedding {
+            left:7%;
+        }
+        .teks-gambar-website-company {
+            left:7%;
+        }
+        .container-deskripsi-web-front-end img {
+            margin-left:0%;
+            padding-bottom:8%;
+        }
+        .teks-gambar-website-portfolio {
+            margin-left:7%;
         }
         /* .my-work {
             background:radial-gradient(blue,#1a1aff,#3333ff,#4d4dff,#6666ff)
@@ -447,8 +476,51 @@ hp<!DOCTYPE HTML>
             transform:scale(0.8);
             margin-left:-10%;
         } */
+        .teks-gambar-services-1 {
+            margin-left:29%;
+        }
         .container-deskripsi-web-front-end {
             left:0.5%;
+        }
+        .komentar_kritik_saran {
+            position:absolute;
+            left:5%;
+            transform:translateY(40PX);
+        }
+        .komentar_kritik_saran form {
+            width:30%;
+            height:30%;
+            position: absolute;
+        }
+        .komentar_kritik_saran input {
+            transform:translateX(120px)translateY(-25px);
+            height:30px;
+            margin-bottom:20px;
+            width:350px;
+        }
+        input[placeholder],textarea[placeholder] {
+            font-style: italic;
+            font-family: times new 'Times New Roman', Times, serif;
+        }
+        .komentar_kritik_saran textarea {
+            transform:translateX(121px)translateY(-25px);
+            height:300px;
+            width:350px;
+        }
+        .komentar_kritik_saran button {
+            width:110px;
+            height:50px;
+            border:none;
+            border-radius:20px;
+            color:black;
+            letter-spacing:1px;
+            font-size:15px;
+            font-weight: bold;
+            background-color:lightblue;
+            box-shadow: 0 0 10px 0px lightblue;
+        }
+        .footer {
+            top:1400px;
         }
     }
     @media (min-width:576px) {
@@ -461,7 +533,7 @@ hp<!DOCTYPE HTML>
             left:108%;
         }
         .identitas-diri {
-            top:-10%;
+            transform:translateY(-70%);
             padding-bottom:8%;
             padding-top:1%;
         }
@@ -476,7 +548,7 @@ hp<!DOCTYPE HTML>
         .foto-h2 {
             transform:scale(0.6);
             top:-48%;
-            left:-29%;
+            left:-30%;
         }
         .about {
             margin-top:-35%;
@@ -505,10 +577,6 @@ hp<!DOCTYPE HTML>
         }
         .contacts-h3 {
             margin-left:-0.5%;
-        }
-        .my-services-h3 {
-            margin-left:-11%;
-            transform:scale(0.8);
         }
         /* .my-work-h3 {
             margin-left:-11%;
@@ -562,15 +630,33 @@ hp<!DOCTYPE HTML>
             left:36%;
             margin-top:0%;
         }
-        .my-services-h3 {
-            transform:scale(0.8);
-            margin-left:-7%;
+        .teks-gambar-services-1 {
+            margin-left:24%;
         }
-        .my-services img {
-            margin-left:1.7%;
+        .my-services {
+            left:2%;
+        }
+        .my-services-h3 {
+            margin-left:-6%;
+        }
+        .teks-gambar-services-1 {
+            margin-left:22%;
+        }
+        .my-services-p1 {
+            margin-left:-9%;
+        }
+        .container-deskripsi-web-front-end img {
+            margin-left:-2%;
+            padding-bottom:6%;
         }
         .container-deskripsi-web-front-end {
             left:2%;
+        }
+        hr {
+            left:-8%;
+        }
+        .footer {
+            top:1200px;
         }
     }
     @media (min-width:768px) {
@@ -601,7 +687,7 @@ hp<!DOCTYPE HTML>
             left:-30.5%;
         }
         .about {
-            margin-top:-35%;
+            margin-top:-45%;
             margin-left:-9%;
             width: 48%;
         }
@@ -692,17 +778,32 @@ hp<!DOCTYPE HTML>
             margin-left:-0.5%;
         }
         .my-services {
-            margin-left:-4%;
+            margin-left:-6.2%;
+            width:42%;
         }
         .my-services-h3 {
             transform:scale(0.8);
-            margin-left:-10%;
+            margin-left:-8%;
         }
-        .my-services img {
-            margin-left:4%;
+        .teks-gambar-services-1 {
+            margin-left:22%;
+        }
+        .container-deskripsi-web-front-end img {
+            margin-left:0%;
+            transform:scale(1.2);
+            margin-top:4%;
+            padding-bottom:10%;
         }
         .container-deskripsi-web-front-end {
-            left:3.5%;
+            left:7.5%;
+            width:100%;
+        }
+        hr {
+            margin-left:-6%;
+        }
+        .footer {
+            top:1900px;
+            z-index:99;
         }
     }
     @media (min-width:992px) {
@@ -715,7 +816,7 @@ hp<!DOCTYPE HTML>
             left:63%;
         }
         .identitas-diri {
-            top:-10%;
+            transform:translateY(-700px);
             padding-bottom:8%;
             padding-top:1%;
             left:3.5%;
@@ -734,9 +835,10 @@ hp<!DOCTYPE HTML>
             left:-27.5%;
         }
         .about {
-            margin-top:-35%;
+            margin-top:-60%;
             left:0;
             width: 60%;
+            padding-bottom:5%;
         }
         .about-h3 {
             margin-left:-4%;
@@ -758,8 +860,8 @@ hp<!DOCTYPE HTML>
             left:-15%;
         }
         .contacts-h3 {
-            transform:scale(1);
-            left:-4.5%;
+            transform:scale(1)translateY(45%);
+            left:15%;
         }
         .Instagram {
             margin-top:0%;
@@ -791,15 +893,15 @@ hp<!DOCTYPE HTML>
             left:0.8%;
         }
         tulisan-contacts-merah {
-            left:60%;
+            left:50%;
             top:12%;
         }
         tulisan-contacts-biru {
-            left:59%;
+            left:48%;
             top:40.5%;
         }
         tulisan-contacts-hijau {
-            left:62%;
+            left:50%;
             top:68%;
         }
         background-biru {
@@ -808,17 +910,32 @@ hp<!DOCTYPE HTML>
             z-index:5
         }
         .my-services {
-            margin-left:-7%;
+            margin-left:-9%;
+            width:55%;
+        }
+        .my-services-p1 {
+            margin-left:-10%;
         }
         .my-services-h3/*,.my-work-h3*/ {
             transform:scale(0.7);
-            margin-left:-16%;
+            margin-left:-15%;
         }
-        .my-services img {
-            margin-left:10.2%;
+        .teks-gambar-services-1 {
+            margin-left:19%;
+        }
+        .container-deskripsi-web-front-end img {
+            margin-left:-3%;
+            padding-bottom:8%;
         }
         .container-deskripsi-web-front-end {
             left:9.5%;
+        }
+        hr {
+            left:-10%;
+        }
+        .footer {
+            top:2800px;
+            z-index:99;
         }
     }
     @media (min-width:1200px) {
@@ -850,7 +967,7 @@ hp<!DOCTYPE HTML>
             left:-30.5%;
         }
         .about {
-            margin-top:-37%;
+            margin-top:-57%;
             margin-left:-16%;
             width: 75%;
         }
@@ -860,7 +977,6 @@ hp<!DOCTYPE HTML>
         }
         .about-p1 {
             line-height:50px;
-
         }
         .about-p2 {
             line-height:50px;
@@ -872,16 +988,35 @@ hp<!DOCTYPE HTML>
             margin-left:-0.5%;
         }
         .my-services {
-            margin-left:-13.5%;
+            margin-left:-16%;
+            width:70%;
         }
         .my-services-h3/*,.my-work-h3*/ {
-            margin-left:-16%;
+            margin-left:-14%;
         }
         .my-services img {
-            margin-left:13%;
+            margin-left:-8%;
+        }
+        .teks-gambar-services-1 {
+            margin-left:7%;
         }
         .container-deskripsi-web-front-end {
             left:13%;
+        }
+        .my-services-p1 {
+            margin-left:-15%;
+        }
+        hr {
+            left:-13%;
+        }
+        tulisan-contacts-merah,tulisan-contacts-hijau {
+            left:60%;
+        }
+        tulisan-contacts-biru {
+            left:58%;
+        }
+        .footer {
+            top:4400px;
         }
     }
     @media (min-width:1360px) {
@@ -894,7 +1029,7 @@ hp<!DOCTYPE HTML>
             left:46%;
         }
         .identitas-diri {
-            top:-10%;
+            transform:translateY(10%);
             padding-bottom:8%;
             padding-top:1%;
             /* box-shadow: -61.5px -100px gray; */        
@@ -913,7 +1048,7 @@ hp<!DOCTYPE HTML>
             left:-30.5%;
         }
         .about {
-            margin-top:-37%;
+            margin-top:-30%;
             margin-left:-19%;
             width: 82%;
         }
@@ -935,15 +1070,15 @@ hp<!DOCTYPE HTML>
             margin-left:-0.5%;
         }
         tulisan-contacts-merah {
-            left:87%;
+            left:67%;
             top:12%;
         }
         tulisan-contacts-biru {
-            left:86%;
+            left:65%;
             top:40.5%;
         }
         tulisan-contacts-hijau {
-            left:89%;
+            left:67%;
             top:68%;
         }
         background-biru {
@@ -952,17 +1087,55 @@ hp<!DOCTYPE HTML>
             z-index:5
         }
         .my-services {
-            margin-left:-18%;
-            height:540px;
+            margin-left:-20%;
+            width:80%;
         }
         .my-services img {
-            margin-left:16%;
+            margin-left:-12%;
         }
         .my-services-h3/*,.my-work-h3*/ {
-            margin-left:-16%;
+            margin-left:-14%;
         }
         .container-deskripsi-web-front-end {
             left:16%;
+        }
+        .teks-gambar-services-1 {
+            margin-top:0%;
+            margin-left:32%;
+        }
+        .my-services-p1 {
+            margin-left:-20%;
+        }
+        hr {
+            margin-left:-9.5%;
+        }
+        .komentar_kritik_saran {
+            position:absolute;
+            left:5%;
+            transform:translateY(40PX);
+        }
+        .komentar_kritik_saran form {
+            width:30%;
+            height:30%;
+            position: absolute;
+        }
+        .komentar_kritik_saran input {
+            transform:translateX(120px)translateY(-25px);
+            height:30px;
+            margin-bottom:20px;
+            width:350px;
+        }
+        .footer {
+        top:5200px;
+        z-index:99;
+        }
+    }
+    @media (min-width:1366px) {
+        .identitas-diri {
+            transform:translateY(-200%);
+        }
+        .about {
+            margin-top:-75%;
         }
     }
     .container-ombak-air1 {
@@ -1990,7 +2163,7 @@ letter-spacing: 3px;
     transform:translateX(-630px) translateY(430px);
     background: transparent;
     position: absolute;
-    z-index: 1;
+    z-index: 50;
   }
   
   .dropdown-content {
@@ -2010,7 +2183,7 @@ letter-spacing: 3px;
   }
   
   .dropdown-content a:hover {background-color: #f1f1f1}
-  
+  /* .dropdown-content a:active {background:red;} */
   .dropdown:hover .dropdown-content {
     display: block;
   }
@@ -2024,7 +2197,6 @@ letter-spacing: 3px;
     margin-top: 0%;
     margin-left: 0%;
     z-index: 1;
-
 }
 .foto {
     width: 200px;
@@ -2079,13 +2251,13 @@ letter-spacing: 3px;
 .perlindunganmata {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -20px;
     right: 0;
     bottom: 0;
     background: black;
     z-index: 1;
     opacity: 0.2;
-    height: 81%;
+    height: 100%;
 }
 .identitas-diri {
     position: relative;
@@ -2111,43 +2283,41 @@ a {
 }
 .container-deskripsi-web-front-end {
     position:relative;
-    width:20%;
-    height:100px;
-    overflow:scroll;
+    /* width:100%;
+    height:100px; */
     margin-left:6.5%;
+}
+.container-deskripsi-web-front-end img {
+    position:relative;
+    width:65%;
+    left:4%
 }
 .Gambar-website-portfolio {
     position:relative;
-    width:26.5%;
-    left:37%;
-    margin-top:20%;
-    transform:scale(3);
-    border:1px solid blue;
+    /* width:26.5%; */
+    /* left:37%; */
+    /* margin-top:20%; */
 }
-.Gambar-website-pribadi {
+.Gambar-website-company {
     position:relative;
-    width:26.5%;
-    left:37%;
-    margin-top:50%;
-    transform:scale(3);
-    border:1px solid blue;
+    /* width:26.5%; */
+    /* left:37%; */
+    /* margin-top:50%; */
 }
 .Gambar-website-wedding {
     position:relative;
-    width:26.5%;
-    left:37%;
-    margin-top:50%;
-    transform:scale(3);
-    border:1px solid blue;
+    /* width:26.5%; */
+    /* left:37%; */
+    /* margin-top:50%; */
 }
 hr{
     background:red;
     position:relative;
 }
 .garis-gambar-website-portfolio {
-    top:120%;
+    top:0%;
 }
-.garis-gambar-website-pribadi {
+.garis-gambar-website-company {
     top:110%;
 }
 .garis-gambar-website-wedding {
@@ -2155,20 +2325,15 @@ hr{
 }
 .teks-gambar-website-portfolio {
     position:relative;
-    top:114%;
-    left:9%;
+    /* top:114%; */
     font-size:15px;
 }
-.teks-gambar-website-pribadi {
+.teks-gambar-website-company {
     position:relative;
-    top:105%;
-    left:9%;
     font-size:15px;
 }
 .teks-gambar-website-wedding {
     position:relative;
-    top:110%;
-    left:9%;
     font-size:15px;
 }
 body {
@@ -2202,7 +2367,73 @@ body {
   width: 40px;
   height: 40px;
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
+.content {
+  padding: 40px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position:absolute;
+  right:0;
+  left:0;
+  transform:translateY(7900PX);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons li a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons li a img:hover {
+  transform: scale(1.2);
+}
+
+#ChangeToDark {
+    z-index:99;
+    top:200px;
+    left:100px;
+    /* width:30px; */
+    height:30px;
+    background: black;
+    color:white;
+    position:absolute;
+}
+#ChangeToLight {
+    z-index:99;
+    top:200px;
+    left:200px;
+    height:30px;
+    background:white;
+    color:black;
+    position:absolute;
+}
 </style>
 <title>Document</title>
 </head>
@@ -2283,6 +2514,10 @@ body {
     <div class="container-atas">
         <canvas id="canvas"></canvas>
         <div class="dropdown">
+            <!-- <button onclick='ChangeToDark()' id="ChangeToDark">Background gelap</button>
+            <button onclick='ChangeToLight()' id="ChangeToLight">Background terang</button> -->
+             <button style='background:transparent;transform:scale(0.1);border:none;position:absolute;top:-150px;left:20px;' id="darkThemeButton"><img style='transform:scale(1);' src="bulan sabit.png" alt="Bulan sabit" border="0"/></button>
+    <button style='color:black;background:transparent;transform:scale(0.1);border:none;position:absolute;top:-165px;left:-40px;' id="lightThemeButton"><img style='transform:scale(1);' src="matahari.png" alt="matahari" border='0'/></button>
             <button class="dropbtn">Dropdown</button>
             <div class="dropdown-content">
             <a href="Teknologi.html">Website Teknologi</a>
@@ -2380,6 +2615,7 @@ body {
                 By the way, I have never worked for any company. I learned programming languages ​​such as HTML, CSS and Javascript
                 via youtube and browser for several years. I also work as a Freelancer in the field of Front-End Development.
             </p>
+            
             <p class='about-p2'style="text-indent: 8%;
             text-align:justify;
             font-size: 35px;
@@ -2409,47 +2645,69 @@ body {
                 <a class='teks-youtube-logo' href='https://www.youtube.com/channel/UCILrabuFIEG7gsZSp0Sf78A' style='position:absolute;' target='blank'>Youtube</a></span>
         </div>
         <div class="my-services">
+            
             <h3 class='my-services-h3' style='font-size:40px;'>My Services/Projects</h3>
-            <img style='position:relative;width:26.5%;left:3%;margin-top:-1%;transform:scale(0.6);' src='gambar WEB Front-End Development.jpg'>
+            <img style='position:relative;left:3%;margin-top:-1%;transform:scale(0.6);' src='gambar WEB Front-End Development.jpg'>
             <span style='position:relative;left:-17%;top:-7%;' class='teks-gambar-services-1'>Web Front-End Development</span>
             <div class="container-deskripsi-web-front-end">
             <p class='my-services-p1'>
                 The first project is web Front-End Development. This Front-End-based web uses HTML, CSS, and Javascript programming languages. HTML as website framework, CSS as website appearance/style, and Javascript as action or UX (User Experience).
                 Example:
             </p>
-            <img class='Gambar-website-portfolio' src='Gambar website portfolio.jpg'>
+            <br>
+            <img class='Gambar-website-portfolio-home' src='Home-website-portfolio.png'>
+            <br><br><br><br>
+            <img class='Gambar-website-portfolio-tentang' src='tentang-website-portfolio.png'>
+            <br><br><br><br>
+            <img class='Gambar-website-portfolio-kontak' src='kontak-website-portfolio.png'>
+            <br><br><br><br>
             <span class='teks-gambar-website-portfolio'>Website Portfolio</span>
-            <hr class='hr garis-gambar-website-portfolio'>
-            <img class='Gambar-website-pribadi' src='Gambar website pribadi.jpg'>
-            <span class='teks-gambar-website-pribadi'>Website Pribadi</span>
-            <hr class='hr garis-gambar-website-pribadi' style='background:red;'>
-            <img class='Gambar-website-wedding' src='Gambar website wedding.jpg'>
+            <hr class='hr garis-gambar-website-portfolio' style='background:red;'>
+            <br><br><br><br><br>
+            <img class='Gambar-website-company-home' src='home-website-company.png'>
+            <br><br><br><br>
+            <img class='Gambar-website-company-tentang' src='tentang-website-company.png'>
+            <br><br><br><br>
+            <img class='Gambar-website-company-layanan' src='layanan-website-company.png'>
+            <br><br><br><br>
+            <span class='teks-gambar-website-company'>Website Company</span>
+            <hr class='hr garis-gambar-website-company' style='background:red;'>
+            <br><br><br><br><br>
+            <img class='Gambar-website-wedding-home' src='Home-website-pernikahan.png'>
+            <br><br><br><br>
+            <img class='Gambar-website-wedding-mempelai' src="mempelai-website-pernikahan.png">
+            <br><br><br><br>
+            <img class='Gambar-website-wedding-mempelai' src="undangan-website-pernikahan.png">
+            <br><br><br><br>
+            <img class='Gambar-website-wedding-doa&ucapan' src="doa dan ucapan-website-pernikahan.png">
+            <br><br><br><br>
             <span class='teks-gambar-website-wedding'>Website Wedding</span>
             <hr class='hr garis-gambar-website-wedding' style='background:red;'>
+            <br><br><br><br><br>
         </div>
+        </div>
+        <div class="komentar_kritik_saran">
+            <form action="komentar-MyPortfolio.php" method="post">
+                <label for="name">Nama:</label>
+                <input placeholder="Ketikkan nama anda" type='name' id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input placeholder="Ketikkan email anda" type="email" id="email" name="email" required>
+                <label for="comment">Komentar:</label>
+                <textarea placeholder='Ketikkan komentar anda' id="comment" name="comment" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>      
         </div>
         <!-- <div style='position:relative;margin-top:10%;' class="my-work">
             <h3 class='my-work-h3' style='font-size:40px;text-indent:4%;'>My Work</h3>
         </div> -->
     </div>
 </div>
-<div class="komentar_kritik_saran">
-    <form action="komentar-MyPortfolio.php" method="post">
-        <label for="name">Nama:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="comment">Komentar:</label>
-        <textarea id="comment" name="comment" required></textarea>
-        <button type="submit">Kirim Komentar</button>
-    </form>      
-</div>
 <div class="whatsapp-container">
     <a href="https://api.whatsapp.com/send?phone=081388612550" target="_blank" class="whatsapp-link">
       <img src="Logo whatsapp.svg" alt="WhatsApp Logo">
     </a>
   </div>   
-    <?php
+<!-- <?php
 //koneksi ke database
 $servername = "localhost";
 $username = "username";
@@ -2476,9 +2734,222 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $conn->close();
-?>
-    <script type='text/javascript' src='MyPortfolio.js'>
-    </script>
-</body>
+?> -->
 
+    <script type='text/javascript'>
+    window.setTimeout("waktu()", 1000);
+
+function waktu() {
+    var waktu = new Date();
+    setTimeout("waktu()", 1000);
+    document.getElementById("jam").innerHTML = waktu.getHours();
+    document.getElementById("menit").innerHTML = waktu.getMinutes();
+    document.getElementById("detik").innerHTML = waktu.getSeconds();
+}
+var dialLines = document.getElementsByClassName('diallines');
+var clockEl = document.getElementsByClassName('clock')[0];
+
+for (var i = 1; i < 60; i++) {
+clockEl.innerHTML += "<div class='diallines'></div>";
+dialLines[i].style.transform = "rotate(" + 6 * i + "deg)";
+}
+
+function clock() {
+var weekday = [
+"Sunday",
+"Monday",
+"Tuesday",
+"Wednesday",
+"Thursday",
+"Friday",
+"Saturday"
+],
+d = new Date(),
+h = d.getHours(),
+m = d.getMinutes(),
+s = d.getSeconds(),
+date = d.getDate(),
+month = d.getMonth() + 1,
+year = d.getFullYear(),      
+hDeg = h * 30 + m * (360/720),
+mDeg = m * 6 + s * (360/3600),
+sDeg = s * 6, 
+hEl = document.querySelector('.hour-hand'),
+mEl = document.querySelector('.minute-hand'),
+sEl = document.querySelector('.second-hand'),
+dateEl = document.querySelector('.date'),
+dayEl = document.querySelector('.day');
+
+var day = weekday[d.getDay()];
+
+if(month < 9) {
+month = "0" + month;
+}
+
+hEl.style.transform = "rotate("+hDeg+"deg)";
+mEl.style.transform = "rotate("+mDeg+"deg)";
+sEl.style.transform = "rotate("+sDeg+"deg)";
+dateEl.innerHTML = date+"/"+month+"/"+year;
+dayEl.innerHTML = day;
+}
+
+setInterval("clock()", 100);
+// Inisialisasi variabel
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var w = window.innerWidth;
+var h = window.innerHeight;
+canvas.width = w;
+canvas.height = h;
+
+var arr = [];
+var maxDrops = 1000;
+
+// Fungsi untuk membuat objek tetesan hujan
+function RainDrop() {
+this.x = Math.random() * w;
+this.y = -5;
+this.vy = Math.random() * 10 + 5;
+this.l = Math.random() * 10 + 5;
+this.w = 2;
+}
+
+// Fungsi untuk menggambar tetesan hujan
+RainDrop.prototype.draw = function () {
+ctx.strokeStyle = "#00BFFF";
+ctx.beginPath();
+ctx.moveTo(this.x, this.y);
+ctx.lineTo(this.x + this.w, this.y + this.l);
+ctx.stroke();
+};
+
+// Fungsi untuk memperbarui posisi tetesan hujan
+RainDrop.prototype.update = function () {
+this.y += this.vy;
+if (this.y > h) {
+this.y = -5;
+this.x = Math.random() * w;
+}
+};
+
+// Fungsi untuk memulai animasi hujan
+function init() {
+for (var i = 0; i < maxDrops; i++) {
+arr.push(new RainDrop());
+}
+animate();
+}
+
+// Fungsi untuk melakukan animasi hujan
+function animate() {
+ctx.clearRect(0, 0, w, h);
+for (var i in arr) {
+arr[i].draw();
+arr[i].update();
+}
+requestAnimationFrame(animate);
+}
+
+// Memulai animasi
+init();
+
+// const button_gelap = document.getElementById('ChangeToDark');
+// const button_terang = document.getElementById('ChangeToLight');
+// const body = document.body;
+// const container=document.querySelector('.container');
+// const myservices=document.querySelector('.my-services')
+// const paragraphs=container.querySelectorAll('p');
+// const teksservices=myservices.querySelectorAll('.my-services-p1');
+// const footer=document.querySelector('.footer');
+
+// button_gelap.addEventListener('click', () => {
+//   if (body.style.backgroundColor === 'white') {
+//     body.style.backgroundImage = 'linear-gradient(black,gray,grey)';
+//     body.style.color = 'white';
+//     paragraphs.forEach(paragraph => {
+//         paragraph.style.color='white';
+//     })
+//     teksservices.forEach(paragraph => {
+//         paragraph.style.color='black';
+//     })
+//     // footer.style.backgroundColor = 'white';
+//   } else {
+//     body.style.backgroundColor = 'white';
+//     body.style.color = 'black';
+//   }
+// });
+// button_terang.addEventListener('click',() => {
+//   if (body.style.backgroundColor==='white') {
+//     body.style.backgroundImage='black';
+//     body.style.color='black';
+//     paragraphs.forEach(paragraph => {
+//       paragraph.style.color='black';
+//     })
+//     teksservices.forEach(paragraph => {
+//       paragraph.style.color='black';
+//     })
+//   }
+//   else {
+//     body.style.backgroundColor='black';
+//     body.style.color='white';
+//   }
+// })
+const aboutp1=document.querySelector('.about-p1');
+// const aboutp2=document.querySelector('.about-p2');
+const about=document.querySelector('.about');
+const myservicesp1=document.querySelector('.my-services-p1');
+const p=about.querySelector('p');
+// const containerIsi=document.querySelector('.container-isi');
+
+// function ChangeToDark() {
+//     document.body.style.backgroundImage='linear-gradient(to top, black,gray)';
+//     document.body.style.color='white';
+//     aboutp1.style.color='white';
+//     about.style.color='white';
+//     about.style.backgroundImage='linear-gradient(to bottom,black,gray)';
+//     myservicesp1.style.color='black';
+// }
+// function ChangeToLight() {
+//     document.body.style.backgroundColor='white';
+//     document.body.style.color='black';
+// }
+// Mendapatkan referensi ke elemen-elemen yang diperlukan
+const darkThemeButton = document.getElementById('darkThemeButton');
+const lightThemeButton = document.getElementById('lightThemeButton');
+const body = document.body;
+
+// Function untuk mengubah ke tema gelap
+function enableDarkTheme() {
+    body.style.backgroundColor = 'black'; // Ubah latar belakang menjadi gelap
+    body.style.color = '#fff'; // Ubah warna teks menjadi putih
+    aboutp1.style.color='white';
+    myservicesp1.style.color='black';
+}
+
+// Function untuk mengubah ke tema terang
+function enableLightTheme() {
+    body.style.backgroundColor = '#fff'; // Kembalikan latar belakang menjadi terang
+    body.style.color = 'black'; // Kembalikan warna teks menjadi gelap
+    p.style.color='black';
+}
+
+// Tambahkan event listener untuk tombol tema gelap
+darkThemeButton.addEventListener('click', enableDarkTheme);
+
+// Tambahkan event listener untuk tombol tema terang
+lightThemeButton.addEventListener('click', enableLightTheme);
+
+    </script>
+    <footer class="footer">
+        <div class="footer-content">
+          <p>Hak Cipta © 2023 - Bryan P.S</p>
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/profile.php?id=100095148818333"><img src="facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.twitter.com/BocahSenar"><img src="twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/brianphilips3/"><img src="instagram.png" alt="Instagram"></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+</body>
 </html>
