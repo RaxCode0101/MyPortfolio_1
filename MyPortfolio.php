@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+hp<!DOCTYPE HTML>
 <html lang="all">
 
 <head>
@@ -2707,7 +2707,7 @@ body {
       <img src="Logo whatsapp.svg" alt="WhatsApp Logo">
     </a>
   </div>   
-<!-- <?php
+<?php
 //koneksi ke database
 $servername = "localhost";
 $username = "username";
@@ -2734,7 +2734,7 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $conn->close();
-?> -->
+?>
 
     <script type='text/javascript'>
     window.setTimeout("waktu()", 1000);
@@ -2944,9 +2944,9 @@ lightThemeButton.addEventListener('click', enableLightTheme);
         <div class="footer-content">
           <p>Hak Cipta © 2023 - Bryan P.S</p>
           <ul class="social-icons">
-            <li><a href="https://www.facebook.com/profile.php?id=100095148818333"><img src="Facebook.png" alt="Facebook"></a></li>
-            <li><a href="https://www.twitter.com/BocahSenar"><img src="Twitter.png" alt="Twitter"></a></li>
-            <li><a href="https://www.instagram.com/brianphilips3/"><img src="Instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100095148818333"><img src="facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.twitter.com/BocahSenar"><img src="twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/brianphilips3/"><img src="instagram.png" alt="Instagram"></a></li>
           </ul>
         </div>
       </footer>
