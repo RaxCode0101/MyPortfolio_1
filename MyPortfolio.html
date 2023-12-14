@@ -3329,6 +3329,66 @@ body {
     color:black;
     position:absolute;
 }
+
+.box {
+    width: 400px;
+    height: 400px;
+    margin-left:40%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    animation: rotateAnimation 10s linear infinite;
+}
+
+.box div {
+    text-align:center;
+}
+.face {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.front {
+    transform: translateZ(200px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(200px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(200px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(200px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(200px);
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
 </style>
 <title>Document</title>
 </head>
@@ -3523,6 +3583,15 @@ body {
                 The Back-End Development is because my understanding has not been able to digest it. this is what made me change my goals from
                 wanted to be a Programmer changed to wanted to be a Front-End Developer.
             </p>
+            <div class="box">
+                <div class="face front">Elon Musk<img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="Face 1"></div>
+                <div class="face back">Steve Jobs<img src="https://cdn0-production-images-kly.akamaized.net/g0VFyFA4vGgC6s-8W0tYMEvl2kc=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/998388/original/015166400_1442992023-stevejobs1.jpg" alt="Face 2"></div>
+                <div class="face left">Bill Gates<img src="https://voffice.co.id/jakarta-virtual-office/business-tips/wp-content/uploads/2018/11/biografi-bill-gates.jpg" alt="Face 3"></div>
+                <div class="face right">Mark Zuckerberg<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" alt="Face 4"></div>
+                <div class="face top"><img src="face5.jpg" alt="Face 5"></div>
+                <div class="face bottom"><img src="face6.jpg" alt="Face 6"></div>    
+            </div>
+            <span style="font-family:times new roman;Font-size:40px;color:lime;filter:drop-shadow(0 0 5px black);margin-left:35%;margin-top:2%;">They are my idols</span>
         </div>
         <div class="contacts" style="position:relative;">
             <tulisan-contacts-merah>They<br>are<br>my<br>Social<br>Media</tulisan-contacts-merah>
@@ -3540,7 +3609,6 @@ body {
                 <a class='teks-youtube-logo' href='https://www.youtube.com/channel/UCILrabuFIEG7gsZSp0Sf78A' style='position:absolute;' target='blank'>Youtube</a></span>
         </div>
         <div class="my-services">
-            
             <h3 class='my-services-h3' style='font-size:40px;'>My Services/Projects</h3>
             <img class='gambar-my-services' style='position:relative;left:3%;margin-top:-1%;transform:scale(0.6);' src='Web Development.jpg'/>
             <span style='position:relative;left:-17%;top:-7%;' class='teks-gambar-services-1'>Web Front-End Development</span>
@@ -3602,6 +3670,36 @@ body {
       <img src="Logo whatsapp.svg" alt="WhatsApp Logo">
     </a>
   </div>  
+
+<!-- <?php
+//koneksi ke database
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "database_name";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+//memproses data yang dikirimkan oleh pengguna
+$name = $_POST['name'];
+$email = $_POST['email'];
+$comment = $_POST['comment'];
+
+$sql = "INSERT INTO comments (name, email, comment)
+VALUES ('$name', '$email', '$comment')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Komentar berhasil dikirim!";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+$conn->close();
+?> -->
+
     <script type='text/javascript'>
     window.setTimeout("waktu()", 1000);
 
