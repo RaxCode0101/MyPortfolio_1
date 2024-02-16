@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
 <style>
     * {
         padding: 0;
@@ -40,7 +41,6 @@
         position: relative;
         /* z-index:1; */
     }
-
     .container-atas .matahari {
         width: 160px;
         height: 160px;
@@ -248,40 +248,119 @@
     @media (min-width:320px) {
         .container-atas .matahari {
             min-width:160px;
+            transform:translateX(100px)translateY(-100px);
             /* height:160px; */
         }
-        .dropdown {
-        left:20%;
+        .jam-digital-malasngoding {
+            left:-50px;
         }
         .perlindunganmata {
             transform:translateY(-35px);
         }
+        .sec-center {
+        margin-left:-10%;
+        margin-top:-10%;
+        }
+        .dropdown:checked + label,
+.dropdown:not(:checked) + label {
+    transform:scale(0.8);
+}
+        .container-theme {
+            transform:scale(0.6)translateX(200px);
+            margin-top:275%;
+        }
+        .container-isi {
+            transform:translateY(140px);
+        }
+        .foto-style-text,.about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text,.my-services-style-text {
+            font-size:20px;
+            animation-name:fade;
+            animation-duration:4s;
+            animation-timing-function:linear;
+            animation-delay:0;
+            animation-direction:alternate;
+            animation-iteration-count:infinite;
+        }
+        .foto-style-text {
+            position:absolute;
+            margin-top:-1%;
+            margin-left:4%;
+        }
+        .about-style-text {
+            margin-top:29%;
+            margin-left:4%;
+        }
+        .contacts-style-text {
+            margin-top:-4%;
+            margin-left:1%;
+        }
+        .my-services-style-text {
+            position:absolute;
+            margin-top:0%;
+            margin-left:3%;
+            color:black;
+        }
+        .form-style-text {
+            position:absolute;
+            margin-top:7%;
+            margin-left:-1%;
+            transform:rotate(45deg);
+        }
+        .footer-style-text {
+            position:absolute;
+            margin-top:-34%;
+            margin-left:6%;
+        }
+        @keyframes fade {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:0.2;
+            }
+        }
         .identitas-diri {
             transform:translateX(-41%)translateY(60%);
         }
+        .foto {
+            transform:scale(0.65)translateY(-70%);
+        }
         .foto-h1 {
-            transform:scale(0.6);
-            left:-17.5%;
-            top:-41%;
+            transform:scale(0.45);
+            left:-3%;
+            top:-100%;
+            text-shadow:0 0 5px black;
+        }
+        .spasi {
+            font-size:45px;
+            transform:translateX(45%)translateY(4px);
+            color:black;
+            /* -webkit-text-stroke-width:1px;
+            -webkit-text-stroke-color:red; */
+            font-weight:bold;
+            text-shadow:0 0 3px gray;
         }
         .foto-h2 {
-            transform:rotate(90deg)scale(0.55)translateY(28%);
-            left:-16%;
+            transform:rotate(90deg)scale(0.45);
+            top:-92%;
+            left:10.4%;
+            text-shadow: 0 0 5px black;
         }
         .about {
-            margin-top:45%;
-            width:24%;
-            margin-left:-5%;
+            margin-top:-4%;
+            width:30%;
+            margin-left:-8%;
         }
         .about-h3 {
-            transform:scale(0.6);
+            transform:scale(0.4);
             margin-left:2%;
         }
         .about-p1 {
-            margin-top:-20%;
+            margin-top:-32%;
         }
         .about-p1,.about-p2 {
-            transform:scale(0.7);
+            transform:scale(0.4);
             margin-left:-2.8%;
             line-height:50px;
         }
@@ -289,13 +368,39 @@
             margin-left:6%;
         }
         .about-p2 {
-            margin-top:-60%;
+            margin-top:-72%;
         }
+        .box {
+            margin-top:-30%;        
+            width:30px;
+    height:30px;
+    margin-left:40%;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    animation: rotateAnimation 10s linear infinite;
+    transform:scale(0.7);
+}
+.face {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.face img {
+    transform:scale(0.5);
+    object-fit: cover;
+}
+.text-idol {
+    left:-35%;
+    transform:scale(0.8);
+}
         .contacts {
             position:relative;
             transform:scale(0.7);
             left:-16%;
-            margin-top:-7%;
+            margin-top:-2%;
             background:black;
             box-shadow:0 0 0 10px #0d0d0d,0 0 0 20px #1a1a1a ,0 0 0 30px #262626,0 0 0 40px #333333, 0 0 0 50px #404040, 0 0 0 60px #4d4d4d,0 0 0 70px #595959,
             0 0 0 80px #666666,0 0 0 90px #737373,0 0 0 100px #808080; 
@@ -304,7 +409,7 @@
             left:18%;
             text-shadow: 0 0 10px yellow,0 0 20px yellow, 0 0 30px yellow,0 0 40px white, 0 0 50px yellow;
             color:white;
-            transform:translateY(150px) translateX(-330px)scale(0.8);
+            transform:translateY(150px) translateX(-755px)scale(0.45);
         }
         contacts {
             font-size:300%;
@@ -316,21 +421,21 @@
         tulisan-contacts-merah {
             position: absolute;
             color: red;
-            font-size:30px;
+            font-size:22px;
             left:16%;
             top:20%;
         }
         tulisan-contacts-biru {
             position: absolute;
             color: blue;
-            font-size:30px;
-            left:15%;
+            font-size:22px;
+            left:16%;
             top:45%;
         }
         tulisan-contacts-hijau {
             position: absolute;
             color: green;
-            font-size:30px;
+            font-size:22px;
             left:16%;
             top:68%;
         }
@@ -412,42 +517,89 @@
             color:yellow;
         }
         .my-services {
-            background:linear-gradient(to right,pink,yellow,red,black,white);
+            /* background:linear-gradient(to right,pink,yellow,red,black,white); */
             margin-left:-1%;
+            margin-top:8%;
             position:relative;
             width:40%;
         }
         .gambar-my-services {
-            margin-left:-9%;
+            margin-left:-4.5%;
             margin-top:-30%;
-            width:50%;
+            width:40%;
         }
         .teks-gambar-services-1 {
-            transform:translateX(-32%)translateY(-20%)scale(0.8);
+            margin-left:-24%;
+            transform:scale(0.53);
         }
         .my-services-p1 {
-            width:25%;
-            left:-2%;
+            width:34%;
+            left:-6%;
+            top:-23px;
+            transform:scale(0.65);
         }
         .my-services img {
-            transform:translateX(-37%)scale(0.53);
+            transform:translateX(-37%)scale(0.47);
         }
         .my-services-h3 {
-            transform:scale(0.5);
-            margin-left:-28%;
+            transform:scale(0.35);
+            margin-left:-43%;
         }
-        .teks-gambar-website-wedding {
-            left:7%;
+        .Gambar-website-portfolio-home {
+            margin-top:-10%;
         }
-        .teks-gambar-website-company {
-            left:7%;
+        .Gambar-website-portfolio-about {
+            margin-top:-33%;
+        }
+        .Gambar-website-portfolio-contact {
+            margin-top:-33.5%;
+        }
+        .Gambar-website-portfolio-services {
+            margin-top:-33.2%;
         }
         .container-deskripsi-web-front-end img {
             margin-left:0%;
             padding-bottom:8%;
         }
         .teks-gambar-website-portfolio {
-            margin-left:7%;
+            top:192px;
+            margin-left:5%;
+        }
+        hr.garis-gambar-website-portfolio {
+            margin-top:-7%;
+            margin-left:10%;
+        }
+        .Gambar-website-company-home {
+            margin-top:-8%;
+        }
+        .Gambar-website-company-tentang {
+            margin-top:-30.8%;
+        }
+        .Gambar-website-company-menu {
+            margin-top:-35.3%;
+        }
+        .Gambar-website-company-produk {
+            margin-top:-42.5%;
+        }
+        .Gambar-website-company-k-f {
+            margin-top:-40.5%;
+        }
+        .teks-gambar-website-company {
+            top:-130px;
+            margin-left:5%;
+        }
+        hr.garis-gambar-website-company {
+            margin-top:-15%;
+            margin-left:10%;
+        }
+        hr {
+            margin-left:-2%;
+        }
+        .Gambar-website-wedding-home {
+            margin-top:-10%;
+        }
+        .Gambar-website-wedding-mempelai,.Gambar-website-wedding-undangan,.Gambar-website-wedding-doa-dan-ucapan {
+            margin-top:-33%;
         }
         /* .my-work {
             background:radial-gradient(blue,#1a1aff,#3333ff,#4d4dff,#6666ff)
@@ -456,16 +608,35 @@
             transform:scale(0.8);
             margin-left:-10%;
         } */
-        .teks-gambar-services-1 {
-            margin-left:29%;
+        .teks-gambar-website-wedding {
+            top:-130px;
+            margin-left:5%;
+        }
+        hr.garis-gambar-website-wedding {
+            margin-top:-15%;
+            margin-left:10%;
+        }
+        .teks-gambar-website-portfolio, .teks-gambar-website-company,
+        .teks-gambar-website-wedding {
+            transform:scale(0.75);
         }
         .container-deskripsi-web-front-end {
             left:0.5%;
         }
+        .judulform {
+            left:-1.5%;
+            margin-top:12.3%;
+            transform:scale(0.65);
+        }
         .komentar_kritik_saran {
             position:absolute;
             left:0%;
-            transform:translateY(40PX);
+            margin-top:13%;
+            width:13%;
+            height:10%;
+        }
+        .komentar_kritik_saran label {
+        font-size:12px;
         }
         .komentar_kritik_saran form {
             width:30%;
@@ -477,7 +648,7 @@
             height:30px;
             margin-bottom:20px;
             width:150px;
-            font-size:14px;
+            font-size:12px;
         }
         input[placeholder],textarea[placeholder] {
             font-style: italic;
@@ -487,31 +658,43 @@
             transform:translateX(121px)translateY(-25px);
             height:300px;
             width:150px;
-            font-size:16px;
+            font-size:13px;
         }
         .komentar_kritik_saran button {
-            width:110px;
+            width:60px;
             height:50px;
             border:none;
             border-radius:20px;
             color:black;
             letter-spacing:1px;
-            font-size:15px;
+            font-size:10px;
             font-weight: bold;
-            background-color:lightblue;
-            box-shadow: 0 0 10px 0px lightblue;
+        }
+        .text-footer {
+            font-size:13px;
+            margin-top:5%;
+            margin-left:31.5%;
+            letter-spacing:10px;
         }
         .footer {
-            top:4200px;
+            top:1300px;
+            font-size:13px;
         }
+        .footer p {
+            margin-left:10px;
+        }
+        /* .footer .footer-content .social-icons {
+            margin-top:20px;
+        } */
     }
     @media (min-width:360px) {
         .container-atas .matahari {
             min-width:160px;
             /* height:160px; */
+            transform:translateX(130px)translateY(-100px);
         }
-        .dropdown {
-        left:0%;
+        .jam-digital-malasngoding {
+            left:-30px;
         }
         .perlindunganmata {
             transform:translateY(-35px);
@@ -519,29 +702,88 @@
         .identitas-diri {
             transform:translateX(-40%)translateY(60%);
         }
+        .sec-center {
+            margin-left:-25%;
+        }
+        .container-theme {
+            transform:scale(0.6)translateX(300px);
+            margin-top:238%;
+        }
+        .isi {
+            top:0;
+        }
         .foto-h1 {
-            transform:scale(0.6);
-            left:-17.5%;
-            top:-41%;
+            transform:scale(0.4);
+            left:-3%;
+            top:-95%;
         }
         .foto-h2 {
-            transform:rotate(90deg)scale(0.55)translateY(28%);
-            left:-16%;
+            transform:rotate(90deg)scale(0.4);
+            top:-93%;
+            left:10.4%;
         }
         .about {
-            margin-top:45%;
-            width:26%;
-            margin-left:-5%;
+            margin-top:-4%;
+            width:32%;
+            margin-left:-8%;
+        }
+        .foto-style-text,.footer-style-text,.about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text,.my-services-style-text {
+            font-size:20px;
+            animation-name:fade;
+            animation-duration:4s;
+            animation-timing-function:linear;
+            animation-delay:0;
+            animation-direction:alternate;
+            animation-iteration-count:infinite;
+        }
+        .foto-style-text {
+            position:absolute;
+            margin-top:-2%;
+            margin-left:5%;
+        }
+        .about-style-text {
+            margin-top:28%;
+            margin-left:5%;
+        }
+        .contacts-style-text {
+            margin-top:-3%;
+            margin-left:2%;
+        }
+        .my-services-style-text {
+            position:absolute;
+            margin-top:-1%;
+            margin-left:4%;
+            color:black;
+        }
+        .form-style-text {
+            position:absolute;
+            margin-top:8%;
+            margin-left:0%;
+            transform:rotate(45deg);
+        }
+        .footer-style-text {
+            position:absolute;
+            margin-top:-34%;
+            margin-left:6%;
+        }
+        @keyframes fade {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:0.2;
+            }
         }
         .about-h3 {
-            transform:scale(0.6);
-            margin-left:1%;
+            transform:scale(0.4);
+            margin-left:0%;
         }
         .about-p1 {
-            margin-top:-20%;
+            margin-top:-26%;
         }
         .about-p1,.about-p2 {
-            transform:scale(0.7);
+            transform:scale(0.4);
             margin-left:-2.8%;
             line-height:50px;
         }
@@ -549,13 +791,19 @@
             margin-left:6%;
         }
         .about-p2 {
-            margin-top:-60%;
+            margin-top:-59%;
+        }
+        .box {
+            margin-top:-20%;
+        }
+        .text-idol {
+            left:-35%;
         }
         .contacts {
             position:relative;
             transform:scale(0.7);
             left:-16%;
-            margin-top:-7%;
+            margin-top:-2%;
             background:black;
             box-shadow:0 0 0 10px #0d0d0d,0 0 0 20px #1a1a1a ,0 0 0 30px #262626,0 0 0 40px #333333, 0 0 0 50px #404040, 0 0 0 60px #4d4d4d,0 0 0 70px #595959,
             0 0 0 80px #666666,0 0 0 90px #737373,0 0 0 100px #808080; 
@@ -564,33 +812,33 @@
             left:18%;
             text-shadow: 0 0 10px yellow,0 0 20px yellow, 0 0 30px yellow,0 0 40px white, 0 0 50px yellow;
             color:white;
-            transform:translateY(190px)translateX(-330px)scale(0.8);
+            transform:translateY(190px)translateX(-700px)scale(0.5);
         }
         contacts {
             font-size:300%;
             margin-left:-3%;
         }
-         o,n,t,a,c,t,s {
+        o,n,t,a,c,t,s {
             margin-left:-3%;
         }
         tulisan-contacts-merah {
             position: absolute;
             color: red;
-            font-size:40px;
+            font-size:23px;
             left:18%;
             top:18%;
         }
         tulisan-contacts-biru {
             position: absolute;
             color: blue;
-            font-size:40px;
-            left:16%;
+            font-size:23px;
+            left:18%;
             top:43%;
         }
         tulisan-contacts-hijau {
             position: absolute;
             color: green;
-            font-size:40px;
+            font-size:23px;
             left:18%;
             top:68%;
         }
@@ -672,42 +920,60 @@
             color:yellow;
         }
         .my-services {
-            background:linear-gradient(to right,pink,yellow,red,black,white);
+            /* background:linear-gradient(to right,pink,yellow,red,black,white); */
             margin-left:-1%;
             position:relative;
             width:40%;
         }
         .gambar-my-services {
-            margin-left:-8%;
+            margin-left:-5%;
             margin-top:-30%;
-            width:54%;
+            width:46%;
         }
         .teks-gambar-services-1 {
-            transform:translateX(-32%)translateY(-20%)scale(0.8);
+            transform:translateX(-46%)translateY(-20%)scale(0.52);
         }
         .my-services-p1 {
-            width:30%;
-            left:-2%;
+            width:36%;
+            left:-5%;
         }
         .my-services img {
-            transform:translateX(-33%)scale(0.53);
+            transform:translateX(-33%)scale(0.46);
         }
         .my-services-h3 {
-            transform:scale(0.5);
-            margin-left:-28%;
+            transform:scale(0.35);
+            margin-left:-43%;
+        }
+        .teks-gambar-website-portfolio {
+            top:200px;
+            margin-left:7%;
+        }
+        hr.garis-gambar-website-portfolio {
+            margin-top:-7%;
+            margin-left:12%;
         }
         .teks-gambar-website-wedding {
-            left:7%;
+            top:-130px;
+            margin-left:7%;
+        }
+        hr.garis-gambar-website-wedding {
+            margin-top:-15%;
+            margin-left:12%;
         }
         .teks-gambar-website-company {
-            left:7%;
+            top:-130px;
+            margin-left:7%;
+        }
+        hr.garis-gambar-website-company {
+            margin-top:-15%;
+            margin-left:12%;
+        }
+        .Gambar-website-company-home {
+            margin-top:-8%;
         }
         .container-deskripsi-web-front-end img {
             margin-left:0%;
             padding-bottom:8%;
-        }
-        .teks-gambar-website-portfolio {
-            margin-left:7%;
         }
         /* .my-work {
             background:radial-gradient(blue,#1a1aff,#3333ff,#4d4dff,#6666ff)
@@ -722,13 +988,24 @@
         .container-deskripsi-web-front-end {
             left:0.5%;
         }
+        .judulform {
+            left:-1%;
+            margin-top:14%;
+            transform:scale(0.65);
+        }
         .komentar_kritik_saran {
             position:absolute;
-            transform:translateY(40PX)translateX(20px);
+            margin-top:15%;
+            transform:translateX(20px);
+            width:19%;
+            height:10%;
+            left:-6px;
+        }
+        .komentar_kritik_saran label {
+        font-size:12px;
+        margin-left:14%;
         }
         .komentar_kritik_saran form {
-            width:30%;
-            height:30%;
             position: absolute;
         }
         .komentar_kritik_saran input {
@@ -736,6 +1013,7 @@
             height:30px;
             margin-bottom:20px;
             width:180px;
+            font-size:11px;
         }
         input[placeholder],textarea[placeholder] {
             font-style: italic;
@@ -745,60 +1023,121 @@
             transform:translateX(121px)translateY(-25px);
             height:300px;
             width:180px;
+            font-size:13px;
         }
         .komentar_kritik_saran button {
-            width:110px;
+            width:60px;
             height:50px;
             border:none;
             border-radius:20px;
             color:black;
             letter-spacing:1px;
-            font-size:15px;
+            font-size:10px;
             font-weight: bold;
-            background-color:lightblue;
-            box-shadow: 0 0 10px 0px lightblue;
         }
         .footer {
-            top:3800px;
+            top:1300px;
         }
     }
     @media (min-width:414px) {
+        .about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text {
+            font-size:0;
+        }
         .container-atas .matahari {
             min-width:160px;
             /* height:160px; */
+            transform:translateX(135px)translateY(-100px);
         }
-        .dropdown {
-        left:0%;
+        .jam-digital-malasngoding {
+            left:-4.5px;
         }
         .perlindunganmata {
             transform:translateY(-35px);
         }
+        .sec-center {
+            transform:scale(1);
+        }
+        .container-theme {
+            transform:scale(0.7)translateX(320px);
+            margin-top:206%;
+        }
         .identitas-diri {
             transform:translateX(-39%)translateY(60%);
         }
+        .foto {
+            transform:scale(0.65)translateY(-45%);
+        }
         .foto-h1 {
-            transform:scale(0.6);
-            left:-17.5%;
-            top:-41%;
+            transform:scale(0.4);
+            left:-3%;
+            top:-74.5%;
         }
         .foto-h2 {
-            transform:rotate(90deg)scale(0.55)translateY(28%);
-            left:-16%;
+            transform:rotate(90deg)scale(0.4);
+            top:-72%;
+            left:10.4%;
         }
         .about {
             margin-top:45%;
-            width:28%;
-            margin-left:-5%;
+            width:34%;
+            margin-left:-8%;
+        }
+        .foto-style-text,.about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text,.my-services-style-text {
+            font-size:25px;
+            animation-name:fade;
+            animation-duration:4s;
+            animation-timing-function:linear;
+            animation-delay:0;
+            animation-direction:alternate;
+            animation-iteration-count:infinite;
+        }
+        .foto-style-text {
+            margin-top:-1%;
+        }
+        .about-style-text {
+            margin-top:33%;
+            margin-left:5%;
+        }
+        .contacts-style-text {
+            margin-top:-4%;
+            margin-left:2%;
+        }
+        .my-services-style-text {
+            position:absolute;
+            margin-top:0%;
+            margin-left:4%;
+            color:black;
+        }
+        .form-style-text {
+            position:absolute;
+            margin-top:8%;
+            margin-left:-1%;
+            transform:rotate(45deg);
+        }
+        .footer-style-text {
+            position:absolute;
+            margin-top:-34%;
+            margin-left:6%;
+        }
+        @keyframes fade {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:0.2;
+            }
         }
         .about-h3 {
-            transform:scale(0.6);
-            margin-left:-1%;
+            transform:scale(0.4);
+            margin-left:-6%;
         }
         .about-p1 {
-            margin-top:-16%;
+            margin-top:-24%;
         }
         .about-p1,.about-p2 {
-            transform:scale(0.7);
+            transform:scale(0.4);
             margin-left:-2.8%;
             line-height:50px;
         }
@@ -806,23 +1145,22 @@
             margin-left:6%;
         }
         .about-p2 {
-            margin-top:-30%;
+            margin-top:-53.5%;
         }
         .contacts {
             position:relative;
             transform:scale(0.7);
             left:-16%;
-            margin-top:-7%;
+            margin-top:-3%;
             background:black;
             box-shadow:0 0 0 10px #0d0d0d,0 0 0 20px #1a1a1a ,0 0 0 30px #262626,0 0 0 40px #333333, 0 0 0 50px #404040, 0 0 0 60px #4d4d4d,0 0 0 70px #595959,
             0 0 0 80px #666666,0 0 0 90px #737373,0 0 0 100px #808080; 
             }
             .contacts-h3 {
-            transform:scale(1.5);
             left:20%;
             text-shadow: 0 0 10px yellow,0 0 20px yellow, 0 0 30px yellow,0 0 40px white, 0 0 50px yellow;
             color:white;
-            transform:translateY(150px) translateX(-100px);
+            transform:translateY(150px)translateX(-680px)scale(0.55);
         }
         contacts {
             font-size:300%;
@@ -834,21 +1172,21 @@
         tulisan-contacts-merah {
             position: absolute;
             color: red;
-            font-size:40px;
+            font-size:25px;
             left:20%;
             top:16%;
         }
         tulisan-contacts-biru {
             position: absolute;
             color: blue;
-            font-size:40px;
-            left:18%;
+            font-size:25px;
+            left:20%;
             top:42%;
         }
         tulisan-contacts-hijau {
             position: absolute;
             color: green;
-            font-size:40px;
+            font-size:25px;
             left:20%;
             top:68%;
         }
@@ -880,30 +1218,17 @@
             width:36%;
             height:36%;
         }
-        .Facebook {
-            margin-left:-8.5%;
-            top:-260px;
-            width:59%;
-            height:59%;
-        }
-        .Twitter {
-            left:15%;
-            top:-390px;
-            width:20%;
-            height:20%;
-        }
-        .Youtube {
-            left:-2%;
-            top:560px;
-        }
-        .teks-instagram-logo,.teks-facebook-logo,.teks-twitter-logo,.teks-youtube-logo {
-            transform:scale(1.7);
-        }
         .teks-instagram-logo {
             left:6%;
             top:23%;
             z-index:5;
             /* font-size:10px; */
+        }
+        .Facebook {
+            margin-left:-8.5%;
+            top:-260px;
+            width:59%;
+            height:59%;
         }
         .teks-facebook-logo {
             left:6%;
@@ -911,17 +1236,30 @@
             z-index:5;
             /* font-size:10px; */
         }
+        .Twitter {
+            left:15%;
+            top:-390px;
+            width:20%;
+            height:20%;
+        }
         .teks-twitter-logo {
             left:6.5%;
             top:63%;
             z-index:5;
             /* font-size:10px; */
         }
+        .Youtube {
+            left:-2%;
+            top:560px;
+        }
         .teks-youtube-logo {
             left:6%;
             top:83.5%;
             z-index:5;
             /* font-size:10px; */
+        }
+        .teks-instagram-logo,.teks-facebook-logo,.teks-twitter-logo,.teks-youtube-logo {
+            transform:scale(1.5);
         }
         a.teks-instagram-logo:hover,a.teks-facebook-logo:hover,a.teks-twitter-logo:hover,a.teks-youtube-logo:hover {
             color:white;
@@ -930,42 +1268,68 @@
             color:rgb(18, 18, 17);
         }
         .my-services {
-            background:linear-gradient(to right,pink,yellow,red,black,white);
+            /* background:linear-gradient(to right,pink,yellow,red,black,white); */
             margin-left:-1%;
             position:relative;
             width:40%;
         }
         .gambar-my-services {
-            margin-left:-8%;
+            margin-left:-4%;
             margin-top:-30%;
-            width:58%;
+            width:50%;
         }
         .teks-gambar-services-1 {
-            transform:translateX(-30%)translateY(-20%)scale(0.8);
+            transform:translateX(-38%)translateY(-20%)scale(0.55);
         }
         .my-services-p1 {
-            width:34%;
-            left:-1%;
+            width:40%;
+            left:-4%;
         }
         .my-services img {
-            transform:translateX(-29%)scale(0.65);
+            transform:translateX(-29%)scale(0.5);
         }
         .my-services-h3 {
-            transform:scale(0.5);
-            margin-left:-28%;
+            transform:scale(0.35);
+            margin-left:-42%;
+        }
+        .teks-gambar-website-portfolio {
+            margin-left:10.5%;
+            margin-top:-2.5%;
+        }
+        .Gambar-website-portfolio-about {
+            margin-top:-31%;
+        }
+        .Gambar-website-portfolio-contact {
+            margin-top:-32%;
+        }
+        .Gambar-website-portfolio-services {
+            margin-top:-32%;
+        }
+        .Gambar-website-company-tentang {
+            margin-top:-30%;
+        }
+        .Gambar-website-company-menu {
+            margin-top:-34.5%;
+        }
+        .Gambar-website-company-produk {
+            margin-top:-41%;
+        }
+        .Gambar-website-company-k-f {
+            margin-top:-39%;
+        }
+        .Gambar-website-wedding-mempelai, .Gambar-website-wedding-undangan, 
+        .Gambar-website-wedding-doa-dan-ucapan {
+            margin-top:-32%;
         }
         .teks-gambar-website-wedding {
-            left:7%;
+            margin-left:10%;
         }
         .teks-gambar-website-company {
-            left:7%;
+            left:3%;
         }
         .container-deskripsi-web-front-end img {
             margin-left:0%;
             padding-bottom:8%;
-        }
-        .teks-gambar-website-portfolio {
-            margin-left:7%;
         }
         /* .my-work {
             background:radial-gradient(blue,#1a1aff,#3333ff,#4d4dff,#6666ff)
@@ -981,11 +1345,11 @@
             left:0.5%;
         }
         hr {
-           left:-5.5%; 
+           left:3%; 
         }
         .komentar_kritik_saran {
             position:absolute;
-            transform:translateY(40PX)translateX(20px);
+            transform:translateX(20px);
         }
         .komentar_kritik_saran form {
             width:30%;
@@ -1008,19 +1372,17 @@
             width:220px;
         }
         .komentar_kritik_saran button {
-            width:110px;
-            height:50px;
+            width:70px;
+            height:40px;
             border:none;
-            border-radius:20px;
+            border-radius:10px;
             color:black;
             letter-spacing:1px;
-            font-size:15px;
+            font-size:12px;
             font-weight: bold;
-            background-color:lightblue;
-            box-shadow: 0 0 10px 0px lightblue;
         }
         .footer {
-            top:3500px;
+            top:1500px;
         }
     }
     @media (min-width:500px) {
@@ -1046,60 +1408,119 @@
         .perlindunganmata {
             transform:translateY(-35px);
         }
+        .jam-digital-malasngoding {
+            left:30px;
+        }
+        .sec-center {
+            margin-left:-23%;
+            margin-top:-2%;
+        }
+        .container-theme {
+            transform:scale(0.75)translateX(400px);
+            margin-top:174%;
+        }
+        .identitas-diri {
+            transform:translateY(-10%);
+            padding-bottom:8%;
+            padding-top:1%;
+        }
+        .foto {
+            transform:scale(0.8)translateY(-70%);
+            left:-31%;
+        }
+        .foto-h1 {
+            transform:scale(0.5);
+            left:-33%;
+            top:-71%;
+        }
+        .spasi {
+            transform:translateX(8%)translateY(4px);
+        }
+        .foto-h2 {
+            transform:scale(0.4);
+            top:-82%;
+            left:-21%;
+        }
         .container-isi {
             transform:scale(0.8);
             left:-61%;
             top:25%;
         }
+        .about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text {
+            font-size:0;
+        }
         /* #ChangeToDark {
             transform:translateX(100px)translateY(30px);
         } */
         /* #ChangeToLight {
-
         } */
-        .dropdown {
-            left:0%;
-            /* float:left;
-            overflow:hidden; */
-        }
-        .identitas-diri {
-            transform:translateY(-70%);
-            padding-bottom:8%;
-            padding-top:1%;
-        }
-        .foto {
-            left:-31%;
-        }
-        .foto-h1 {
-            transform:scale(0.8);
-            left:-39.5%;
-            top:-41%;
-        }
-        .foto-h2 {
-            transform:scale(0.55);
-            top:-48%;
-            left:-33%;
-        }
-
         .about {
-            margin-top:-45%;
+            margin-top:-35%;
             margin-left:-1%;
             width: 36%;
         }
-        .about-h3 {
+        .foto-style-text,.about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text,.my-services-style-text {
+            font-size:30px;
+            animation-name:fade;
+            animation-duration:4s;
+            animation-timing-function:linear;
+            animation-delay:0;
+            animation-direction:alternate;
+            animation-iteration-count:infinite;
+        }
+        .foto-style-text {
+            margin-top:-16%;
+            margin-left:13%;
+        }
+        .about-style-text {
+            margin-top:-5%;
+            margin-left:13%;
+        }
+        .contacts-style-text {
+            margin-top:2%;
+            margin-left:9%;
+        }
+        .my-services-style-text {
+            position:absolute;
+            margin-top:-3%;
+            margin-left:12%;
+            color:black;
+        }
+        .form-style-text {
+            position:absolute;
+            margin-top:8%;
             margin-left:6%;
-            transform:scale(0.8);
+            transform:rotate(0deg);
+        }
+        .footer-style-text {
+            position:absolute;
+            margin-top:-26%;
+            margin-left:6%;
+        }
+        @keyframes fade {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:0.2;
+            }
+        }
+        .about-h3 {
+            margin-left:-11%;
+            transform:scale(0.5);
         }
         .about-p1 {
             line-height:50px;
-            transform:scale(0.9);
-            margin-top:-2.5%;
+            transform:scale(0.55);
+            margin-top:-15.5%;
             margin-left:-1%;
         }
         .about-p2 {
             line-height:50px;
-            transform:scale(0.9);
-            margin-top:5%;
+            transform:scale(0.55);
+            margin-top:-0.7;
             margin-left:-1%;
         }
         .contacts {
@@ -1112,10 +1533,10 @@
             0 0 0 80px #666666,0 0 0 90px #737373,0 0 0 100px #808080; 
         }
         .contacts-h3 {
-            left:18%;
+            left:19%;
             text-shadow: 0 0 10px yellow,0 0 20px yellow, 0 0 30px yellow,0 0 40px white, 0 0 50px yellow;
             color:white;
-            transform:translateY(60%) translateX(-6%)scale(1);
+            transform:translateY(52%) translateX(-23%)scale(0.65);
         }
         contacts {
             font-size:300%;
@@ -1127,27 +1548,27 @@
         tulisan-contacts-merah {
             position: absolute;
             color: red;
-            font-size:75px;
-            left:29%;
+            font-size:30px;
+            left:31%;
             top:12%;
         }
         tulisan-contacts-biru {
             position: absolute;
             color: blue;
-            font-size:75px;
-            left:27%;
+            font-size:30px;
+            left:31%;
             top:40.5%;
         }
         tulisan-contacts-hijau {
             position: absolute;
             color: green;
-            font-size:75px;
-            left:29%;
+            font-size:30px;
+            left:31%;
             top:68%;
         }
         background-biru {
             position: absolute;
-            left:1.7%;
+            left:2%;
             top:7.5%;
             width:6%;
             height:85%;
@@ -1168,10 +1589,10 @@
             z-index:5;
         }
         .Instagram {
-            left:-8%;
-            top:-910px;
-            width:60%;
-            height:60%;
+            left:-2.8%;
+            top:-850px;
+            width:50%;
+            height:50%;
         }
         .Facebook {
             margin-left:-2%;
@@ -1187,10 +1608,10 @@
         }
         .Youtube {
             left:-22.5%;
-            top:460px;
+            top:410px;
         }
         .teks-instagram-logo,.teks-facebook-logo,.teks-twitter-logo,.teks-youtube-logo {
-            transform:scale(2);
+            transform:scale(1.8);
         }
         .teks-instagram-logo {
             left:2%;
@@ -1199,17 +1620,17 @@
         }
         .teks-facebook-logo {
             left:1.5%;
-            top:44%;
+            top:39%;
             z-index:5;
         }
         .teks-twitter-logo {
             left:1.8%;
-            top:66%;
+            top:63.5%;
             z-index:5;
         }
         .teks-youtube-logo {
             left:1.8%;
-            top:87%;
+            top:84%;
             z-index:5;
         }
         a.teks-instagram-logo:hover,a.teks-facebook-logo:hover,a.teks-twitter-logo:hover,a.teks-youtube-logo:hover {
@@ -1219,43 +1640,97 @@
             color:yellow;
         }
         .my-services {
-            background:linear-gradient(to right,pink,yellow,red,black,white);
+            /* background:linear-gradient(to right,pink,yellow,red,black,white); */
             margin-left:0%;
             position:relative;
             width:50%;
         }
         .gambar-my-services {
-            margin-left:-7%;
+            margin-left:0%;
             margin-top:-30%;
-            width:75%;
+            width:60%;
         }
         .teks-gambar-services-1 {
-            margin-left:26%;
-            transform:scale(1);
+            margin-left:24%;
+            transform:scale(0.7);
         }
         .my-services-p1 {
             width:50%;
             left:1%;
+            top:10px;
+            transform:scale(0.75);
         }
         .my-services img {
-            transform:translateX(-12%)scale(0.85);
+            transform:translateX(-12%)scale(0.65);
         }
         .my-services-h3 {
-            transform:scale(0.8);
-            margin-left:-1%
+            transform:scale(0.45);
+            margin-left:-25%;
         }
-        .teks-gambar-website-wedding {
-            left:7%;
+        .teks-gambar-website-portfolio {
+            margin-left:22%;
+            top:190px;
+        }
+        hr.garis-gambar-website-portfolio {
+            margin-top:1%;
+            margin-left:22.5%;
+        }
+        .Gambar-website-portfolio-home {
+            margin-top:-6%;
+        }
+        .Gambar-website-portfolio-about {
+            margin-top:-25%;
+        }
+        .Gambar-website-portfolio-contact {
+            margin-top:-26%;
+        }
+        .Gambar-website-portfolio-services {
+            margin-top:-25.5%;
         }
         .teks-gambar-website-company {
-            left:7%;
+            top:-120px;
+            left:15%;
+        }
+        hr.garis-gambar-website-company {
+            margin-top:-10%;
+            margin-left:22.5%;
+        }
+        .Gambar-website-company-home {
+            margin-top:-5%;
+        }
+        .Gambar-website-company-tentang {
+            margin-top:-23.5%;
+        }
+        .Gambar-website-company-menu {
+            margin-top:-26.5%;
+        }
+        .Gambar-website-company-produk {
+            margin-top:-31%;
+        }
+        .Gambar-website-company-k-f {
+            margin-top:-30%;
+        }
+        .teks-gambar-website-wedding {
+            margin-left:22%;
+            top:-130px;
+        }
+        hr.garis-gambar-website-wedding {
+            margin-top:-11%;
+            margin-left:22.5%;
+        }
+        .Gambar-website-wedding-home {
+            margin-top:-6%;
+        }
+        .Gambar-website-wedding-mempelai,.Gambar-website-wedding-undangan,.Gambar-website-wedding-doa-dan-ucapan {
+            margin-top:-24.5%;
+        }
+        .teks-gambar-website-portfolio, .teks-gambar-website-company,
+        .teks-gambar-website-wedding {
+            transform:scale(0.9);
         }
         .container-deskripsi-web-front-end img {
             margin-left:0%;
             padding-bottom:8%;
-        }
-        .teks-gambar-website-portfolio {
-            margin-left:7%;
         }
         /* .my-work {
             background:radial-gradient(blue,#1a1aff,#3333ff,#4d4dff,#6666ff)
@@ -1264,19 +1739,24 @@
             transform:scale(0.8);
             margin-left:-10%;
         } */
-        .teks-gambar-services-1 {
-            margin-left:29%;
-        }
         .container-deskripsi-web-front-end {
             left:0.5%;
         }
+        .judulform {
+            left:3%;
+            margin-top:14%;
+            transform:scale(0.8);
+        }
         .komentar_kritik_saran {
             position:absolute;
-            left:5%;
-            transform:translateY(40PX);
+            left:3.4%;
+            width:27%;
+            height:7%;
+            padding-top:2%;
         }
-        label {
-            font-size:20px;
+        .komentar_kritik_saran label {
+            font-size:16px;
+            margin-left:20%;
         }
         .komentar_kritik_saran form {
             width:30%;
@@ -1284,20 +1764,20 @@
             position: absolute;
         }
         .komentar_kritik_saran input {
-            transform:translateX(120px)translateY(-25px);
-            height:50px;
+            transform:translateX(180px)translateY(-25px);
+            height:30px;
             margin-bottom:20px;
-            width:400px;
-            font-size:20px;
+            width:250px;
+            font-size:18px;
         }
         input[placeholder],textarea[placeholder] {
             font-style: italic;
             font-family: times new 'Times New Roman', Times, serif;
         }
         .komentar_kritik_saran textarea {
-            transform:translateX(121px)translateY(-25px);
+            transform:translateX(181px)translateY(-25px);
             height:300px;
-            width:400px;
+            width:300px;
             font-size:20px;
         }
         .komentar_kritik_saran button {
@@ -1309,21 +1789,46 @@
             letter-spacing:1px;
             font-size:15px;
             font-weight: bold;
-            background-color:lightblue;
-            box-shadow: 0 0 10px 0px lightblue;
+            transform:translateX(30px);
         }
         .footer {
-            top:3300px;
+            top:1800px;
+        }
+        .footer p {
+            margin-left:31%;
+            transform:translateY(20px);
+        }
+        .text-footer {
+            font-size:13px;
+            margin-top:6%;
+            margin-left:40%;
+            letter-spacing:10px;
+        }
+        .footer-content ul {
+            margin-top:-8%;
+            transform:translateX(-190px);
+        }
+        .social-icons li a img {
+            transform:scale(0.9);
         }
     }
     @media (min-width:576px) {
+        .container-atas .matahari {
+            min-width:160px;
+            /* height:160px; */
+            transform:translateX(160px)translateY(-100px);
+        }
+        .jam-digital-malasngoding {
+            left:90px;
+        }
+        .container-theme {
+            transform:scale(0.75)translateX(520px);
+            margin-top:150%;
+        }
         .container-isi {
             transform:scale(0.8);
             left:-50%;
             top:35%;
-        }
-        .dropdown {
-            left:0%;
         }
         .identitas-diri {
             transform:translateY(-70%);
@@ -1331,72 +1836,125 @@
             padding-top:1%;
         }
         .foto {
+            transform:scale(0.9);
             left:-29.5%;
         }
         .foto-h1 {
-            transform:scale(0.8);
-            left:-38%;
+            transform:scale(0.6);
+            left:-31%;
             top:-41%;
         }
         .foto-h2 {
-            transform:scale(0.6);
+            transform:scale(0.5);
             top:-48%;
-            left:-30%;
+            left:-19.5%;
         }
         .about {
             margin-top:-35%;
-            margin-left:0.5%;
-            width: 34%;
+            margin-left:2%;
+            width:35%;
+        }
+        .foto-style-text,.about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text,.my-services-style-text {
+            font-size:35px;
+            animation-name:fade;
+            animation-duration:4s;
+            animation-timing-function:linear;
+            animation-delay:0;
+            animation-direction:alternate;
+            animation-iteration-count:infinite;
+        }
+        .foto-style-text {
+            margin-top:-26%;
+        }
+        .about-style-text {
+            margin-top:-8%;
+            margin-left:13%;
+        }
+        .contacts-style-text {
+            margin-top:2%;
+            margin-left:9%;
+        }
+        .my-services-style-text {
+            position:absolute;
+            margin-top:-3%;
+            margin-left:12%;
+            color:black;
+        }
+        .form-style-text {
+            position:absolute;
+            margin-top:8%;
+            margin-left:6%;
+            transform:rotate(0deg);
+        }
+        .footer-style-text {
+            position:absolute;
+            margin-top:-26%;
+            margin-left:6%;
+        }
+        @keyframes fade {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:0.2;
+            }
         }
         .about-h3 {
-            margin-left:0%;
-            transform:scale(0.8);
+            margin-left:-25%;
+            transform:scale(0.5);
         }
         .about-p1 {
             line-height:50px;
-            width:80%;
-            margin-left:-4.5%;
-            transform:scale(0.9);
+            margin-top:-12%;
         }
         .about-p2 {
             line-height:50px;
-            width:80%;
-            margin-left:-4.5%;
-            transform:scale(0.9);
+            margin-top:-34%;
         }
+        .about-p1,.about-p2 {
+            transform:scale(0.55);
+            margin-left:-9%;
+            line-height:50px;
+        }
+        
         .contacts {
             margin-left:-0.5%;
             transform:scale(0.7);
         }
         .contacts-h3 {
-            transform:scale(1.1)translateY(650px);
-            margin-left:-0.5%;
+            transform:scale(0.7)translateY(810px);
+            margin-left:-26%;
+        }
+        background-biru {
+            position: absolute;
+            left:1%;
         }
         /* .my-work-h3 {
             margin-left:-11%;
             transform:scale(0.8);
         } */
         .Instagram {
-            left:-8.5%;
-            width:60%;
-            height:60%;
+            left:-3.7%;
+            width:50%;
+            height:50%;
         }
         .Facebook {
-            margin-left:-2.5%;
-            top:-620px;
+            margin-left:-2.7%;
+            top:-500px;
             width:88%;
             height:88%;
         }
         .Twitter {
-            top:-720px;
+            top:-700px;
             left:-2%;
         }
         .Youtube {
             left:-22%;
-            top:445px;
+            top:380px;
         }
         .teks-instagram-logo,.teks-facebook-logo,.teks-twitter-logo,.teks-youtube-logo {
-            transform:scale(2.6);
+            transform:scale(2);
         }
         .teks-instagram-logo {
             margin-left:1.5%;
@@ -1404,23 +1962,23 @@
         }
         .teks-facebook-logo {
             margin-left:1.8%;
-            top:41.5%;
+            top:41%;
         }
         .teks-twitter-logo {
             margin-left:1.8%;
-            top:65%;
+            top:62.5%;
             z-index:5;
         }
         .teks-youtube-logo {
             margin-left:1.8%;
-            top:86.5%;
+            top:83%;
         }
         tulisan-contacts-merah {
             left:34%;
             margin-top:0%;
         }
         tulisan-contacts-biru {
-            left:32%;
+            left:34%;
             margin-top:-0.5%;
         }
         tulisan-contacts-hijau {
@@ -1431,21 +1989,80 @@
             left:2%;
         }
         .my-services-h3 {
-            margin-left:-7%;
+            margin-left:-33%;
         }
         .gambar-my-services {
-            margin-left:-16%;
+            margin-left:-13%;
             margin-top:-30%;
-            width:90%;
+            width:84%;
         }
         .teks-gambar-services-1 {
             margin-left:22%;
+            transform:scale(0.75);
         }
         .my-services-p1 {
             margin-left:-3%;
+            transform:scale(0.8);
         }
         .my-services img {
-            transform:translateX(-15%)scale(0.93);
+            transform:translateX(-15%)scale(0.8);
+        }
+        .teks-gambar-website-portfolio {
+            margin-left:20%;
+            top:190px;
+        }
+        hr.garis-gambar-website-portfolio {
+            margin-top:1%;
+            margin-left:20%;
+        }
+        .Gambar-website-portfolio-home {
+            margin-top:-2%;
+        }
+        .Gambar-website-portfolio-about {
+            margin-top:-17%;
+        }
+        .Gambar-website-portfolio-contact {
+            margin-top:-18%;
+        }
+        .Gambar-website-portfolio-services {
+            margin-top:-17%;
+        }
+        .teks-gambar-website-company {
+            top:-90px;
+            left:12%;
+        }
+        hr.garis-gambar-website-company {
+            margin-top:-7%;
+            margin-left:19.5%;
+        }
+        .Gambar-website-company-home {
+            margin-top:-1%;
+        }
+        .Gambar-website-company-tentang {
+            margin-top:-16%;
+        }
+        .Gambar-website-company-menu {
+            margin-top:-18%;
+        }
+        .Gambar-website-company-produk {
+            margin-top:-20%;
+        }
+        .Gambar-website-company-k-f {
+            margin-top:-20%;
+        }
+        .teks-gambar-website-wedding {
+            margin-left:20%;
+            top:-90px;
+        }
+        hr.garis-gambar-website-wedding {
+            margin-top:-7.5%;
+            margin-left:20.5%;
+        }
+        .Gambar-website-wedding-home {
+            margin-top:-2%;
+        }
+        .Gambar-website-wedding-mempelai,.Gambar-website-wedding-undangan,.Gambar-website-wedding-doa-dan-ucapan {
+            margin-top:-17%;
         }
         .container-deskripsi-web-front-end img {
             margin-left:-2%;
@@ -1456,10 +2073,20 @@
         }
         .teks-gambar-website-wedding,.teks-gambar-website-portfolio,
         .teks-gambar-website-company {
-        transform:scale(1.2);
+        transform:scale(1);
         }
-        hr {
-            left:-8%;
+        .judulform {
+            left:3%;
+            margin-top:14%;
+            transform:scale(1);
+        }
+        .komentar_kritik_saran {
+            position:absolute;
+            margin-top:15%;
+            left:2%;
+            width:33%;
+            height:7%;
+            padding-top:2%;
         }
         .komentar_kritik_saran textarea {
             width:450px;
@@ -1467,15 +2094,46 @@
         .footer {
             top:3300px;
         }
+        .footer p {
+            margin-left:34%;
+            transform:translateY(20px);
+        }
+        .footer-content ul {
+            margin-top:-8%;
+            transform:translateX(-220px);
+        }
+        .text-footer {
+            font-size:13px;
+            margin-top:6%;
+            margin-left:42%;
+            letter-spacing:10px;
+        }
     }
     @media (min-width:768px) {
+        .about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text {
+            font-size:0;
+        }
+        .container-atas .matahari {
+            min-width:160px;
+            /* height:160px; */
+            transform:translateX(160px)translateY(-100px);
+        }
+        .jam-digital-malasngoding {
+            left:165px;
+        }
+        .sec-center {
+            margin-left:-23%;
+            margin-top:-2%;
+        }
+        .container-theme {
+            transform:scale(0.75)translateX(840px);
+            margin-top:111%;
+        }
         .container-isi {
             transform:scale(0.8);
             left:0%;
             top:40%;
-        }
-        .dropdown {
-            left:81%;
         }
         .identitas-diri {
             transform:translateY(-130%);
@@ -1483,99 +2141,171 @@
             padding-top:1%;  
         }
         .foto {
-            left:-31%;
+            transform:scale(0.9);
+            left:-40%;
         }
         .foto-h1 {
-            transform:scale(0.8);
-            left:-39.5%;
+            transform:scale(0.55);
+            left:-42%;
             top:-41%;
         }
         .foto-h2 {
-            transform:scale(0.6);
+            transform:scale(0.45);
             top:-48%;
-            left:-30.5%;
+            left:-29%;
         }
         .about {
-            margin-top:-55%;
-            margin-left:-9%;
+            margin-top:-50%;
+            margin-left:-16%;
             width: 48%;
         }
-        .about-h3 {
+        .foto-style-text,.about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text,.my-services-style-text {
+            font-size:40px;
+            animation-name:fade;
+            animation-duration:4s;
+            animation-timing-function:linear;
+            animation-delay:0;
+            animation-direction:alternate;
+            animation-iteration-count:infinite;
+        }
+        .foto-style-text {
+            margin-top:-38%;
+            margin-left:3%;
+        }
+        .about-style-text {
+            margin-top:-22%;
+            margin-left:3%;
+        }
+        .contacts-style-text {
+            margin-top:3%;
+            margin-left:-2%;
+        }
+        .my-services-style-text {
+            position:absolute;
+            margin-top:-5%;
+            margin-left:1%;
+            color:black;
+        }
+        
+        .form-style-text {
+            position:absolute;
+            margin-top:8%;
+            margin-left:-7%;
+            transform:rotate(0deg);
+        }
+        .footer-style-text {
+            position:absolute;
+            margin-top:-18%;
             margin-left:4%;
+        }
+        @keyframes fade {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:0.2;
+            }
+        }
+        .about-h3 {
+            margin-left:-21%;
             padding-bottom:2%;
-            transform:scale(0.8);
+            transform:scale(0.5);
         }
         .about-p1 {
-            line-height:50px;
-            margin-left:2%;
-            transform:scale(0.9);
+            margin-top:-8%;
         }
         .about-p2 {
+            margin-top:-17%;
+        }
+        .about-p1,.about-p2 {
             line-height:50px;
-            margin-left:2%;
-            transform:scale(0.9);
+            margin-left:0%;
+            transform:scale(0.6);
         }
         .contacts {
-            margin-left:-8%;
+            margin-left:-14%;
             transform:scale(0.7);
         }
         .contacts-h3 {
-            margin-left:1%;
+            transform:scale(0.75)translateY(810px);
+            margin-left:-26%;
         }
         .Instagram {
-            top:-1050px;
-            left:-9%;
+            top:-900px;
+            left:-6.5%;
             padding-bottom:5%;
+            width:45%;
+            height:45%;
+        }
+        .teks-instagram-logo {
+            top:17.7%;
+            margin-left:-3.5%;
         }
         .Facebook {
-            margin-left:-3%;
-            top:-720px;
+            margin-left:-6%;
+            top:-500px;
+            width:84%;
+            height:84%;
+        }
+        .teks-facebook-logo {
+            margin-left:-3.5%;
+            top:39.5%;
         }
         .Twitter {
-            top:-852px;
-            left:-2%;
+            top:-740px;
+            left:1.5%;
+            width:22%;
+            height:22%;
+        }
+        .teks-twitter-logo {
+            margin-left:-3.5%;
+            top:62.3%;
         }
         .Youtube {
             top:380px;
-            left:-19%;
+            left:-10%;
+        }
+        .teks-youtube-logo {
+            margin-left:-3.5%;
+            top:83.3%;
         }
         /* .my-work-h3 {
             transform:scale(0.8);
             margin-left:-18.5%;
         } */
         .teks-instagram-logo,.teks-facebook-logo,.teks-twitter-logo,.teks-youtube-logo {
-            transform:scale(2.5);
+            transform:scale(2);
         }
-        .teks-instagram-logo {
-            top:16.5%;
-            margin-left:1%;
-        }
-        .teks-facebook-logo {
-            margin-left:1%;
-            top:40.1%;
-        }
-        .teks-twitter-logo {
-            margin-left:1%;
-            top:62.3%;
-        }
-        .teks-youtube-logo {
-            margin-left:1%;
-            top:85.3%;
+        tulisan-contacts-merah, tulisan-contacts-hijau, 
+        tulisan-contacts-biru {
+            font-size:32px;
         }
         tulisan-contacts-merah {
-            left:45%;
+            left:39%;
             top:13%;
         }
+        tulisan-contacts-merah:hover {
+            background:wheat;
+        }
         tulisan-contacts-hijau {
-            left:43%;
+            left:39%;
             top:39%;
+            /* position:absolute; */
+            z-index:9;
+        }
+        tulisan-contacts-hijau:hover {
+            background:lime;
         }
         tulisan-contacts-biru {
-            left:45%;
+            left:39%;
             top:66%;
         }
+        tulisan-contacts-biru:hover {
+            background:aqua;
+        }
         background-biru {
-            margin-left:-0.7%;
+            margin-left:-5%;
             margin-top:-1%;
         }
         contacts {
@@ -1586,27 +2316,92 @@
             margin-left:-0.5%;
         }
         .my-services {
-            margin-left:-7%;
+            margin-left:-15%;
             width:64%;
+            margin-top:6%;
         }
         .my-services-h3 {
-            transform:scale(0.8);
-            margin-left:-8%;
+            transform:scale(0.5);
+            margin-left:-31%;
         }
         .gambar-my-services {
-            margin-left:-17%;
+            margin-left:-14%;
             margin-top:-30%;
-            width:95%;
+            width:86%;
         }
         .my-services-p1 {
-            width:50%;
-            left:-4%;
+            width:54%;
+            left:-7%;
+            top:-60px;
+            transform:scale(0.85);
+        }
+        .teks-gambar-website-portfolio {
+            margin-left:14%;
+            top:120px;
+        }
+        hr.garis-gambar-website-portfolio {
+            margin-top:-3%;
+            margin-left:13%;
         }
         .my-services img {
-            transform:translateX(-22%)scale(0.9);
+            transform:translateX(-24%)scale(0.8);
+        }
+        .Gambar-website-portfolio-home {
+            margin-top:-3%;
+        }
+        .Gambar-website-portfolio-about {
+            margin-top:-16%;
+        }
+        .Gambar-website-portfolio-contact {
+            margin-top:-17%;
+        }
+        .Gambar-website-portfolio-services {
+            margin-top:-16%;
+        }
+        .teks-gambar-website-company {
+            top:-115px;
+            left:6%;
+        }
+        hr.garis-gambar-website-company {
+            margin-top:-7%;
+            margin-left:12%;
+        }
+        .Gambar-website-company-home {
+            margin-top:-2%;
+        }
+        .Gambar-website-company-tentang {
+            margin-top:-15%;
+        }
+        .Gambar-website-company-menu {
+            margin-top:-17%;
+        }
+        .Gambar-website-company-produk {
+            margin-top:-19.5%;
+        }
+        .Gambar-website-company-k-f {
+            margin-top:-19%;
+        }
+        .teks-gambar-website-wedding {
+            margin-left:14%;
+            top:-110px;
+        }
+        hr.garis-gambar-website-wedding {
+            margin-top:-6.5%;
+            margin-left:13%;
+        }
+        .Gambar-website-wedding-home {
+            margin-top:-3%;
+        }
+        .Gambar-website-wedding-mempelai,.Gambar-website-wedding-undangan,.Gambar-website-wedding-doa-dan-ucapan {
+            margin-top:-15.5%;
+        }
+        .teks-gambar-website-wedding,.teks-gambar-website-portfolio,
+        .teks-gambar-website-company {
+        transform:scale(1.2);
         }
         .teks-gambar-services-1 {
             margin-left:22%;
+            transform:translateY(-80px)scale(0.75);
         }
         container-deskripsi-web-front-end img {
             margin-left:0%;
@@ -1618,12 +2413,18 @@
             left:7.5%;
             width:100%;
         }
-        hr {
-            margin-left:-6%;
+        .judulform {
+            left:-12%;
+            margin-top:14%;
+            transform:scale(1);
         }
         .komentar_kritik_saran {
-            left:-2%;
-            transform:translateY(40PX);
+            position:absolute;
+            margin-top:15%;
+            left:-13%;
+            width:42%;
+            height:5%;
+            padding-top:2%;
         }
         .komentar_kritik_saran input {
             width:400px;
@@ -1633,18 +2434,54 @@
             width:700px;
         }
         .footer {
-            top:5000px;
+            top:4400px;
             z-index:99;
+        }
+        .footer p {
+            margin-left:38%;
+            transform:translateY(50px);
+        }
+        .footer-content ul {
+            margin-top:-4%;
+            transform:translateX(-320px);
+        }
+        .text-footer {
+            font-size:13px;
+            margin-top:6%;
+            margin-left:44%;
+            letter-spacing:10px;
         }
     }
     @media (min-width:992px) {
+        .about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text {
+            font-size:0;
+        }
+        .container-atas .matahari {
+            min-width:160px;
+            /* height:160px; */
+            transform:translateX(200px)translateY(-100px);
+        }
+        .jam-digital-malasngoding {
+            left:295px;
+        }
+        .sec-center {
+            margin-left:-22%;
+            margin-top:-2%;
+        }
+        .container-theme {
+            transform:scale(0.75)translateX(1160px);
+            margin-top:85%;
+        }
+        .identitas-diri {
+            transform:translateY(-140%);
+            padding-bottom:8%;
+            padding-top:1%;  
+        }
         .container-isi {
             transform:scale(0.8);
             left:0%;
             top:55%;
-        }
-        .dropdown {
-            left:63%;
         }
         .identitas-diri {
             transform:translateY(-240%);
@@ -1653,54 +2490,103 @@
             left:3.5%;
         }
         .foto {
-            left:-31%;
+            left:-37%;
+            transform:scale(0.9)translateY(-30%);
         }
         .foto-h1 {
-            transform:scale(0.8);
-            left:-39.5%;
-            top:-41%;
+            transform:scale(0.6);
+            left:-39%;
+            top:-46%;
         }
         .foto-h2 {
-            transform:scale(0.7);
-            top:-48%;
+            transform:scale(0.5);
+            top:-54%;
             left:-27.5%;
         }
         .about {
-            margin-top:-80%;
-            left:0;
-            width: 60%;
+            margin-top:-88%;
+            margin-left:-21%;
+            width:72%;
             padding-bottom:5%;
         }
+        .foto-style-text,.about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text,.my-services-style-text {
+            font-size:40px;
+            animation-name:fade;
+            animation-duration:4s;
+            animation-timing-function:linear;
+            animation-delay:0;
+            animation-direction:alternate;
+            animation-iteration-count:infinite;
+        }
+        .foto-style-text {
+            margin-top:-58%;
+            margin-left:10%;
+        }
+        .about-style-text {
+            margin-top:-54%;
+            margin-left:10%;
+        }
+        .contacts-style-text {
+            margin-top:0%;
+            margin-left:6%;
+        }
+        .my-services-style-text {
+            position:absolute;
+            margin-top:-7%;
+            margin-left:8%;
+            color:black;
+        }
+        .form-style-text {
+            position:absolute;
+            margin-top:10%;
+            margin-left:-1%;
+            transform:rotate(0deg);
+        }
+        .footer-style-text {
+            position:absolute;
+            margin-top:-16%;
+            margin-left:6%;
+        }
+        @keyframes fade {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:0.2;
+            }
+        }
         .about-h3 {
-            margin-left:-5%;
-            transform:scale(0.8);
+            margin-left:-8%;
+            transform:scale(0.6);
             padding-bottom:3%;
         }
         .about-p1 {
-            margin-top:0%;
+            margin-top:-5%;
         }
         .about-p2 {
-        margin-top:5%;
+        margin-top:-7%;
         }
         .about-p1,.about-p2 {
+            transform:scale(0.6);
             line-height:50px;
-            margin-left:-5%;
+            margin-left:-4%;
             width:90%;
         }
         .contacts {
-            margin-top:-8%;
-            left:-15%;
+            margin-top:-6%;
+            left:-16%;
         }
         .contacts-h3 {
-            transform:scale(1)translateY(85%);
-            left:12%;
+            transform:scale(1)translateY(800px);
+            left:39%;
         }
         .Instagram {
-            margin-top:0%;
-            left:-12.5%;
+            top:-930px;
+            left:-7%;
             padding-bottom:5%;
-            width:65%;
-            height:65%;
+            width:55%;
+            height:55%;
         }
         .teks-instagram-logo {
             margin-left:0%;
@@ -1708,66 +2594,134 @@
         }
         .Facebook {
             margin-left:-6%;
-            top:-810px;
+            top:-720px;
             width:92%;
             height:92%;
         }
         .teks-facebook-logo {
             margin-left:0.5%;
+            top:38.5%;
         }
         .Twitter {
-            top:-932px;
-            left:-4.5%;
+            top:-1040px;
+            left:-2%;
         }
         .teks-twitter-logo {
-            left:1%;
+            margin-left:0.5%;
+            top:58.5%;
         }
         .Youtube {
-            top:350px;
-            left:-21%;
+            top:180px;
+            left:-14%;
         }
         .teks-youtube-logo {
-            left:0.8%;
+            left:5.5%;
+            top:79%;
         }
         tulisan-contacts-merah {
-            left:50%;
+            left:53%;
             top:12%;
         }
         tulisan-contacts-biru {
-            left:48%;
+            left:53%;
             top:40.5%;
         }
         tulisan-contacts-hijau {
-            left:50%;
+            left:53%;
             top:68%;
         }
+        tulisan-contacts-merah, tulisan-contacts-hijau, 
+        tulisan-contacts-biru {
+            font-size:36px;
+        }
         background-biru {
-            left:0.5%;
+            left:5%;
             top:7.5%;
             z-index:5
         }
         .my-services {
-            margin-left:-9%;
+            margin-left:-15%;
             width:65%;
         }
+        .my-services-h3/*,.my-work-h3*/ {
+            transform:scale(0.55);
+            margin-left:-26%;
+        }
+        .gambar-my-services {
+            margin-left:-16%;
+            margin-top:-30%;
+            width:110%;
+        }
+        .teks-gambar-services-1 {
+            margin-left:23%;
+            transform:translateY(-320px)scale(0.85);
+        }
         .my-services-p1 {
-            margin-left:0%;
+            width:54%;
+            left:0%;
+            top:-270px;
+            transform:scale(1);
         }
         .my-services img {
             transform:translateX(-13%)translateY(8%)scale(1.2);
             margin-bottom:15%;
         }
-        .my-services-h3/*,.my-work-h3*/ {
-            transform:scale(0.7);
-            margin-left:-15%;
+        .my-services img {
+            transform:translateX(-11%)scale(1);
         }
-        .gambar-my-services {
-            margin-left:-27%;
-            margin-top:-30%;
-            width:130%;
+        .teks-gambar-website-portfolio {
+            margin-left:22%;
+            top:-90px;
         }
-        .teks-gambar-services-1 {
-            margin-left:20%;
+        hr.garis-gambar-website-portfolio {
+            margin-top:-16%;
+        }
+        .Gambar-website-portfolio-home {
+            margin-top:2%;
+        }
+        .Gambar-website-portfolio-about {
+            margin-top:-25%;
+        }
+        .Gambar-website-portfolio-contact {
+            margin-top:-26%;
+        }
+        .Gambar-website-portfolio-services {
+            margin-top:-26%;
+        }
+        .teks-gambar-website-company {
+            top:-310px;
+            left:14%;
+        }
+        hr.garis-gambar-website-company {
+            margin-top:-20%;
+        }
+        .Gambar-website-company-home {
+            margin-top:2%;
+        }
+        .Gambar-website-company-tentang {
+            margin-top:-25%;
+        }
+        .Gambar-website-company-menu {
+            margin-top:-25%;
+        }
+        .Gambar-website-company-produk {
+            margin-top:-25%;
+        }
+        .Gambar-website-company-k-f {
+            margin-top:-25%;
+        }
+        .teks-gambar-website-wedding {
+            margin-left:22%;
+            top:-310px;
+        }
+        hr.garis-gambar-website-wedding {
+            margin-top:-20%;
+        }
+        .Gambar-website-wedding-home {
+            margin-top:2%;
+        }
+        .Gambar-website-wedding-mempelai,.Gambar-website-wedding-undangan,.Gambar-website-wedding-doa-dan-ucapan {
+            margin-top:-25%;
         }
         .container-deskripsi-web-front-end img {
             margin-left:-3%;
@@ -1777,56 +2731,151 @@
             left:9.5%;
         }
         hr {
+            left:11%;
+        }
+        .judulform {
             left:-10%;
+            margin-top:17%;
+            transform:scale(1);
         }
         .komentar_kritik_saran {
-            left:-2%;
-            transform:translateY(40PX);
+            position:absolute;
+            margin-top:18%;
+            left:-13%;
+            width:55%;
+            height:5%;
+            padding-top:2%;
         }
-        .komentar_kritik_saran input { 
-            transform:translateX(300px)translateY(-28px);
+        .komentar_kritik_saran label {
+            margin-left:50%;
+        }
+        .komentar_kritik_saran input {
+            width:400px;
+            transform:translateX(500px)translateY(-28px);
+        }
+        .komentar_kritik_saran textarea {
+            width:700px;
+            transform:translateX(320px)translateY(-30px);
+        }
+        .komentar_kritik_saran button {
+            transform:translateY(40px)translateX(80px);
         }
         .footer {
-            top:7200px;
+            top:6250px;
             z-index:99;
+        }
+        .footer p {
+            margin-left:41%;
+            transform:translateY(90px);
+        }
+        .footer-content ul {
+            margin-top:-2%;
+            transform:translateX(-430px);
+        }
+        .text-footer {
+            font-size:13px;
+            margin-top:4%;
+            margin-left:46%;
+            letter-spacing:10px;
         }
     }
     @media (min-width:1200px) {
+        .container-atas .matahari {
+            min-width:160px;
+            /* height:160px; */
+            transform:translateX(220px)translateY(-100px);
+        }
+        .jam-digital-malasngoding {
+            left:395px;
+        }
+        .sec-center {
+            margin-left:-22%;
+            margin-top:-2%;
+        }
+        .container-theme {
+            transform:scale(0.75)translateX(1500px);
+            margin-top:70%;
+        }
+        .identitas-diri {
+            transform:translateY(-240%);
+            padding-bottom:8%;
+            padding-top:1%;
+            left:3.5%;
+        }
+        .foto {
+            left:-31%;
+            transform:scale(1)translateY(0%);
+        }
+        .foto-h1 {
+            transform:scale(0.7);
+            left:-33%;
+            top:-36%;
+        }
+        .foto-h2 {
+            transform:scale(0.55);
+            top:-44%;
+            left:-21%;
+        }
         .container-isi {
             transform:scale(0.8);
             left:0%;
             top:55%;
         }
-        .dropdown {
-            left:52%;
-        }
-        .identitas-diri {
-            transform:translateY(-260%);
-            padding-bottom:8%;
-            padding-top:1%;
-            /* box-shadow: -61.5px -100px gray; */        
-        }
-        .foto {
-            left:-31%;
-        }
-        .foto-h1 {
-            transform:scale(0.8);
-            left:-39.5%;
-            top:-41%;
-        }
-        .foto-h2 {
-            transform:scale(0.6);
-            top:-48%;
-            left:-30.5%;
-        }
         .about {
-            margin-top:-87%;
-            margin-left:-16%;
-            width: 75%;
+            margin-top:-80%;
+            margin-left:-25%;
+            width: 85%;
+        }
+        .foto-style-text,.about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text,.my-services-style-text {
+            font-size:50px;
+            animation-name:fade;
+            animation-duration:4s;
+            animation-timing-function:linear;
+            animation-delay:0;
+            animation-direction:alternate;
+            animation-iteration-count:infinite;
+        }
+        .foto-style-text {
+            margin-top:-58%;
+            margin-left:14%;
+        }
+        .about-style-text {
+            margin-top:-50%;
+            margin-left:14%;
+        }
+        .contacts-style-text {
+            margin-top:0%;
+            margin-left:9%;
+        }
+        .my-services-style-text {
+            position:absolute;
+            margin-top:-7%;
+            margin-left:11%;
+            color:black;
+        }
+        .form-style-text {
+            position:absolute;
+            margin-top:6%;
+            margin-left:2%;
+            transform:rotate(0deg);
+        }
+        .footer-style-text {
+            position:absolute;
+            margin-top:-14%;
+            margin-left:6%;
+        }
+        @keyframes fade {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:0.2;
+            }
         }
         .about-h3 {
-            margin-left:-4.8%;
-            transform:scale(0.8);
+            margin-left:-4.5%;
+            transform:scale(0.6);
         }
         .about-p1 {
             line-height:50px;
@@ -1834,202 +2883,717 @@
         .about-p2 {
             line-height:50px;
         }
+        .about-p1,.about-p2 {
+            transform:scale(0.6);
+            line-height:50px;
+            margin-left:1%;
+        }
         .contacts {
-            left: -21.5%;
+            left: -16%;
+        }
+        .first-circle {
+            position:absolute;
+            margin-left:30%;
+            margin-top:25%;
+        }
+        .first-circle div:nth-child(odd) {
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            background:gray;
+            margin-top:30%;
+        }
+        .first-circle div:nth-child(even) {
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            background:yellow;
+            margin-top:30%;
+        }
+        .second-circle {
+            position:absolute;
+            margin-left:40%;
+            margin-top:25%;
+        }
+        .second-circle div:nth-child(odd) {
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            background:yellow;
+            margin-top:30%;
+        }
+        .second-circle div:nth-child(even) {
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            background:gray;
+            margin-top:30%;
+        }
+        .third-circle {
+            position:absolute;
+            margin-left:50%;
+            margin-top:25%;
+        }
+        .third-circle div:nth-child(odd) {
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            background:gray;
+            margin-top:30%;
+        }
+        .third-circle div:nth-child(even) {
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            background:yellow;
+            margin-top:30%;
         }
         .contacts-h3 {
-            margin-left:8%;
-            transform:scale(1.2)translateY(800px);
+            margin-left:-22%;
+            transform:scale(1)translateY(740px);
         }
         .my-services {
-            margin-left:-16%;
-            width:80%;
+            margin-left:-9%;
+            width:60%;
         }
         .my-services-h3/*,.my-work-h3*/ {
-            margin-left:-14%;
+            margin-left:-24%;
         }
         .container-deskripsi-web-front-end {
             left:13%;
         }
         .my-services-p1 {
-            margin-left:0%;
+            margin-left:-5%;
+            top:-300px;
         }
         .gambar-my-services {
-            margin-left:-26%;
-            width:130%;
+            margin-left:-10%;
+            width:112%;
         }
         .teks-gambar-services-1 {
             margin-left:22%;
+            transform:translateY(-360px)scale(0.9);
         }
         .my-services img {
-            transform:translateX(-18%)translateY(8%)scale(1.2);
+            transform:translateX(-8%)translateY(8%)scale(1.1);
             margin-bottom:15%;
         }
         hr {
-            left:-13%;
-        }
-        tulisan-contacts-merah,tulisan-contacts-hijau {
-            left:60%;
-        }
-        tulisan-contacts-biru {
-            left:58%;
-        }
-        .komentar_kritik_saran {
-            left:-10%;
-            transform:translateY(40PX);
-        }
-        .komentar_kritik_saran input {
-            transform:translateX(500px)translateY(-30px);
-        }
-        .komentar_kritik_saran textarea {
-            width:700px;
-            transform:translateX(300px)translateY(-20px);
+            left:13%;
         }
         .teks-gambar-website-wedding,.teks-gambar-website-company,
         .teks-gambar-website-portfolio {
             transform:scale(1.3);
         }
+        .teks-gambar-website-portfolio {
+            margin-left:24%;
+            top:-100px;
+        }
+        hr.garis-gambar-website-portfolio {
+            margin-top:-19%;
+        }
+        .Gambar-website-portfolio-home {
+            margin-top:1%;
+        }
+        .Gambar-website-portfolio-about {
+            margin-top:-22%;
+        }
+        .Gambar-website-portfolio-contact {
+            margin-top:-23%;
+        }
+        .Gambar-website-portfolio-services {
+            margin-top:-22%;
+        }
+        .teks-gambar-website-company {
+            top:-230px;
+            left:17%;
+        }
+        hr.garis-gambar-website-company {
+            margin-top:-15%;
+            left:14%;
+        }
+        .Gambar-website-company-home {
+            margin-top:1%;
+        }
+        .Gambar-website-company-tentang {
+            margin-top:-23%;
+        }
+        .Gambar-website-company-menu {
+            margin-top:-23%;
+        }
+        .Gambar-website-company-produk {
+            margin-top:-22%;
+        }
+        .Gambar-website-company-k-f {
+            margin-top:-19%;
+        }
+        .teks-gambar-website-wedding {
+            margin-left:24%;
+            top:-220px;
+        }
+        hr.garis-gambar-website-wedding {
+            margin-top:-15%;
+        }
+        .Gambar-website-wedding-home {
+            margin-top:1%;
+        }
+        .Gambar-website-wedding-mempelai,.Gambar-website-wedding-undangan,.Gambar-website-wedding-doa-dan-ucapan {
+            margin-top:-22%;
+        }
+        tulisan-contacts-merah {
+            top:15%;
+        }
+        tulisan-contacts-biru {
+            top:45%;
+        }
+        tulisan-contacts-hijau {
+            top:75%;
+        }
+        tulisan-contacts-merah,tulisan-contacts-hijau,tulisan-contacts-biru {
+            left:65%;
+            font-size:40px;
+        }
+        .judulform {
+            left:-6%;
+            margin-top:12%;
+            transform:scale(1);
+        }
+        .komentar_kritik_saran {
+            left:-6%;
+            width:52%;
+            height:4.5%;
+            margin-top:14%;
+            border:2px solid black;
+        }
+        .komentar_kritik_saran label {
+            margin-left:50%;
+        }
+        .komentar_kritik_saran input {
+            transform:translateX(550px)translateY(-30px);
+        }
+        .komentar_kritik_saran textarea {
+            width:700px;
+            transform:translateX(400px)translateY(-20px);
+        }
         .footer {
-            top:9400px;
+            top:6000px;
+        }
+        .footer p {
+            margin-left:41%;
+            transform:translateY(110px);
+        }
+        .footer-content ul {
+            margin-top:-2%;
+            transform:translateX(-560px);
+        }
+        .text-footer {
+            font-size:13px;
+            margin-top:4%;
+            margin-left:44%;
+            letter-spacing:10px;
         }
     }
     @media (min-width:1360px) {
+        .container-atas .matahari {
+            min-width:160px;
+            /* height:160px; */
+            transform:translateX(240px)translateY(-100px);
+        }
+        .jam-digital-malasngoding {
+            left:478px;
+        }
+        .sec-center {
+            margin-left:-22%;
+            margin-top:2%;
+        }
+        .container-theme {
+            transform:scale(0.75)translateX(1750px);
+            margin-top:65%;
+        }
         .container-isi {
             transform:scale(0.8);
             left:0%;
             top:63%;
         }
-        .dropdown {
-            left:46%;
-        }
         .identitas-diri {
-            transform:translateY(-320%);
+            transform:translateY(-280%);
             padding-bottom:8%;
             padding-top:1%;
             /* box-shadow: -61.5px -100px gray; */        
         }
+        
         .foto {
-            left:-31%;
+            left:-26%;
+            transform:scale(1.2)translateY(64%);
+        }
+        .foto:hover {
+            animation:none;
         }
         .foto-h1 {
-            transform:scale(0.8);
-            left:-39.5%;
-            top:-41%;
+            transform:scale(0.7);
+            left:-28%;
+            top:10%;
         }
         .foto-h2 {
-            transform:scale(0.6);
-            top:-48%;
-            left:-30.5%;
+            transform:scale(0.55);
+            top:3%;
+            left:-16%;
+        }
+        .foto-style-text,.about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text,.my-services-style-text {
+            font-size:60px;
+            animation-name:fade;
+            animation-duration:4s;
+            animation-timing-function:linear;
+            animation-delay:0;
+            animation-direction:alternate;
+            animation-iteration-count:infinite;
+        }
+        .foto-style-text {
+            margin-top:-59%;
+            margin-left:18%;
+        }
+        .about-style-text {
+            margin-top:-49%;
+            margin-left:17%;
+        }
+        .contacts-style-text {
+            margin-top:-2%;
+            margin-left:9%;
+        }
+        .my-services-style-text {
+            position:absolute;
+            margin-top:-12%;
+            margin-left:14%;
+            color:black;
+        }
+        .form-style-text {
+            position:absolute;
+            margin-top:5%;
+            margin-left:2%;
+            transform:rotate(0deg);
+        }
+        .footer-style-text {
+            position:absolute;
+            margin-top:-14%;
+            margin-left:6%;
+        }
+        @keyframes fade {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:0.2;
+            }
+        }
+        a.teks-instagram-logo:hover,a.teks-facebook-logo:hover,a.teks-twitter-logo:hover,a.teks-youtube-logo:hover {
+            color:white;
+        }
+        a.teks-instagram-logo:visited,a.teks-facebook-logo:visited,a.teks-twitter-logo:visited,a.teks-youtube-logo:visited {
+            color:purple;
         }
         .about {
-            margin-top:-100%;
-            margin-left:-19%;
-            width: 82%;
+            margin-top:-78%;
+            margin-left:-23%;
+            width:90%;
         }
         .about-h3 {
-            margin-left:-7%;
-            transform:scale(0.8);
+            margin-left:-8%;
+            transform:scale(0.6);
         }
         .about-p1,.about-p2 {
             line-height:50px;
+            margin-left:1.5%;
+        }
+        .about-p1 {
+            margin-top:-4%;
         }
         .about-p2 {
-            margin-top:5%;
+            margin-top:-5%;
         }
         .contacts {
-            left: -26%;
+            left:-11%;
+            margin-top:-10%;
+            width:80%;
         }
+        
+.container-star-first {
+  position:absolute;
+  margin-left:35%;
+  margin-top:6%;
+}
+.container-star-second {
+    position:absolute;
+    margin-left:35%;
+    margin-top:85%;
+}
+.star-1,.star-2,.star-3,.star-4,.star-5,.star-6,.star-7,.star-8,.star-9,.star-10,
+.star-11,.star-12,.star-13,.star-14,.star-15,.star-16,.star-17,.star-18,.star-19,.star-20,
+.star-21,.star-22,.star-23,.star-24,.star-25,.star-26,.star-27,.star-28,.star-29,.star-30,
+.star-31,.star-32,.star-33,.star-34,.star-35 {
+  width:10px;
+  height:10px;
+  background:white;
+  border-radius:50%;
+  box-shadow: 0 0 10px 0 aqua;
+  animation-name:brightness-transition;
+  animation-timing-function:linear;
+  animation-duration:2s;
+  animation-delay:0;
+  animation-iteration-count:infinite;
+  margin-top:30px;
+}
+.star-2 {margin-left:50px;}
+.star-3 {margin-left:30px;}
+.star-4 {margin-left:70px;}
+.star-5 {margin-left:300px;}
+.star-6 {margin-left:400px;}
+.star-7 {margin-left:180px;}
+.star-8 {margin-left:120px;}
+.star-9 {margin-left:240px;}
+.star-10 {margin-left:10px;}
+.star-11 {margin-left:40px;}
+.star-12 {margin-left:60px;}
+.star-13 {margin-left:20px;}
+.star-14 {margin-left:380px;}
+.star-15 {margin-left:440px;}
+.star-16 {margin-left:400px;}
+.star-17 {margin-left:410px;}
+.star-18 {margin-left:100px;}
+.star-19 {margin-left:180px;}
+.star-20 {margin-left:280px;}
+.star-21 {margin-left:160px;}
+.star-22 {margin-left:230px;}
+.star-23 {margin-left:370px;}
+.star-24 {margin-left:440px;}
+.star-25 {margin-left:590px;}
+.star-26 {margin-left:330px;}
+.star-27 {margin-left:100px;}
+.star-28 {margin-left:210px;}
+.star-29 {margin-left:70px;}
+.star-30 {margin-left:6px;}
+.star-31 {margin-left:220px;}
+.star-32 {margin-left:170px;}
+.star-33 {margin-left:405px;}
+.star-34 {margin-left:30px;}
+.star-35 {margin-left:230px;}
+@keyframes brightness-transition {
+  from {filter:brightness(0.8);
+  box-shadow:0 0 10px 0px aqua;}
+  to {filter:brightness(1);box-shadow:0 0 20px 0 aqua;}
+}
         .contacts-h3 {
-            margin-left:10%;
-            transform:translateY(920px)scale(1.2);
+            margin-left:-7%;
+            transform:translateY(880px)scale(1.2);
+        }
+        .Instagram {
+            top:-420px;
+            left:-9%;
+            padding-bottom:5%; 
+            width:60%;
+            height:60%;
+        }
+        .teks-instagram-logo {
+            margin-left:1%;
+            margin-top:27%;
+        }
+        .Facebook {
+            margin-left:-7%;
+            top:-460px;
+            width:96%;
+            height:96%;
+        }
+        .teks-facebook-logo {
+            margin-left:1%;
+            top:44%;
+        }
+        .Twitter {
+            top:-760px;
+            left:-6%;
+            width:26%;
+            height:26%;
+        }
+        .teks-twitter-logo {
+            margin-left:2%;
+            top:55%;
+        }
+        .Youtube {
+            top:-300px;
+            left:-15%;
+        }
+        .teks-youtube-logo {
+            left:6%;
+            top:64.5%;
         }
         tulisan-contacts-merah {
-            left:67%;
+            left:75%;
             top:12%;
         }
+        tulisan-contacts-merah,tulisan-contacts-biru,tulisan-contacts-hijau {
+            font-size:45px;
+        }
+        tulisan-contacts-merah:hover {
+            background:wheat;
+        }
         tulisan-contacts-biru {
-            left:65%;
+            left:75%;
             top:40.5%;
+            z-index:9;
+        }
+        tulisan-contacts-biru:hover {
+            background:aqua;
         }
         tulisan-contacts-hijau {
-            left:67%;
+            left:75%;
             top:68%;
         }
+        tulisan-contacts-hijau:hover {
+            background:lime;
+        }
         background-biru {
-            left:0.5%;
-            top:7.5%;
-            z-index:5
+            left:5%;
+            top:24%;
+            z-index:5;
+            width:8%;
+            height:50%;
+        }
+        .first-circle {
+            position:absolute;
+            margin-left:108%;
+            margin-top:10%;
+        }
+        .first-circle div:nth-child(odd) {
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            background:gray;
+            margin-top:30%;
+        }
+        .first-circle div:nth-child(even) {
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            background:yellow;
+            margin-top:30%;
+        }
+        .second-circle {
+            position:absolute;
+            margin-left:120%;
+            margin-top:25%;
+        }
+        .second-circle div:nth-child(odd) {
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            background:yellow;
+            margin-top:30%;
+        }
+        .second-circle div:nth-child(even) {
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            background:gray;
+            margin-top:30%;
+        }
+        .third-circle {
+            position:absolute;
+            margin-left:50%;
+            margin-top:25%;
+            opacity:0;
         }
         .my-services {
-            margin-left:-20%;
-            width:90%;
+            margin-left:-7%;
+            width:65%;
+            margin-top:-4%;
         }
         .my-services img {
-            transform:translateX(-23%)translateY(10%)scale(1.22);
+            transform:translateX(-13%)translateY(10%)scale(1);
         }
         .my-services-h3/*,.my-work-h3*/ {
-            margin-left:-16%;
+            margin-left:-19%;
         }
         .container-deskripsi-web-front-end {
             left:16%;
         }
         .teks-gambar-services-1 {
-            margin-top:0%;
-            margin-left:20%;
+            transform:translateY(-480px)scale(0.9);
+            margin-left:32%;
         }
         .my-services-p1 {
-            margin-left:-5%;
-            margin-top:1%;
+            margin-left:-4%;
+            margin-top:-8%;
         }
         .gambar-my-services {
-            margin-left:-9%;
+            margin-left:-10%;
+            top:-100px;
             width:110%;
         }
-        hr {
-            margin-left:-9.5%;
+        .teks-gambar-website-portfolio {
+            margin-left:22%;
+            top:-100px;
+        }
+        hr.garis-gambar-website-portfolio {
+            margin-top:-16%;
+            margin-left:11%;
+        }
+        .Gambar-website-portfolio-home {
+            margin-top:-2%;
+        }
+        .Gambar-website-portfolio-about {
+            margin-top:-25%;
+        }
+        .Gambar-website-portfolio-contact {
+            margin-top:-26%;
+        }
+        .Gambar-website-portfolio-services {
+            margin-top:-25%;
+        }
+        .teks-gambar-website-company {
+            top:-260px;
+            left:14%;
+        }
+        hr.garis-gambar-website-company {
+            margin-top:-16%;
+            margin-left:9%;
+        }
+        .Gambar-website-company-home {
+            margin-top:-2%;
+        }
+        .Gambar-website-company-tentang {
+            margin-top:-25%;
+        }
+        .Gambar-website-company-menu {
+            margin-top:-25%;
+        }
+        .Gambar-website-company-produk {
+            margin-top:-25%;
+        }
+        .Gambar-website-company-k-f {
+            margin-top:-23%;
+        }
+        .teks-gambar-website-wedding {
+            margin-left:22%;
+            top:-250px;
+        }
+        hr.garis-gambar-website-wedding {
+            margin-top:-15%;
+            margin-left:11%;
+        }
+        .Gambar-website-wedding-home {
+            margin-top:-2%;
+        }
+        .Gambar-website-wedding-mempelai,.Gambar-website-wedding-undangan,.Gambar-website-wedding-doa-dan-ucapan {
+            margin-top:-24%;
+        }
+        .judulform {
+            left:3%;
+            margin-top:10%;
+            transform:scale(1.1);
         }
         .komentar_kritik_saran {
             position:absolute;
-            left:-15%;
-            transform:translateY(40PX);
+            left:5%;
+            width:40%;
+            height:5%;
+            box-shadow:0 0 0 10px wheat,0 0 0 20px whitesmoke,
+            0 0 0 30px lightgray,0 0 0 40px brown,0 0 0 50px rgb(125, 32, 32),
+            0 0 0 60px rgb(78, 20, 20);
+            border:none;
         }
         .komentar_kritik_saran form {
             width:30%;
             height:30%;
             position: absolute;
         }
-        .komentar_kritik_saran input {
-            transform:translateX(620px)translateY(-25px);
-            height:50px;
-            margin-bottom:20px;
-            width:370px;
-            font-size:20px;
-        }
-        .komentar_kritik_saran textarea {
-            width:1370px;
-            font-size:25px;
-        }
         .komentar_kritik_saran label {
         font-size:20px;
         }
+        .komentar_kritik_saran input {
+            transform:translateX(360px)translateY(-45px);
+            height:50px;
+            margin-bottom:20px;
+            width:370px;
+            font-size:18px;
+        }
         .komentar_kritik_saran textarea {
-        width:700px;
-        transform:translateX(450px)translateY(-20px);
+        width:400px;
+        transform:translateX(360px)translateY(-45px);
         }
         .footer {
-        top:10400px;
+        top:6000px;
         z-index:99;
+        }
+        .footer p {
+            margin-left:43%;
+            transform:translateY(110px);
+        }
+        .footer-content ul {
+            margin-top:-2%;
+            transform:translateX(-540px);
+        }
+        .text-footer {
+            font-size:13px;
+            margin-top:4%;
+            margin-left:41%;
+            letter-spacing:10px;
         }
     }
     @media (min-width:1366px) {
         .identitas-diri {
-            transform:translateY(-350%);
+            transform:translateY(-270%);
+        }
+        .foto-style-text,.about-style-text,.contacts-style-text,.form-style-text,
+        .footer-style-text,.my-services-style-text {
+            font-size:60px;
+            animation-name:fade;
+            animation-duration:4s;
+            animation-timing-function:linear;
+            animation-delay:0;
+            animation-direction:alternate;
+            animation-iteration-count:infinite;
+        }
+        .foto-style-text {
+            margin-top:-55%;
+            margin-left:18%;
+        }
+        .about-style-text {
+            margin-top:-46%;
+            margin-left:17%;
+        }
+        .contacts-style-text {
+            margin-top:-3%;
+            margin-left:9%;
+        }
+        .my-services-style-text {
+            position:absolute;
+            margin-top:-12%;
+            margin-left:15%;
+            color:black;
+        }
+        .form-style-text {
+            position:absolute;
+            margin-top:5%;
+            margin-left:2%;
+            transform:rotate(0deg);
+        }
+        .footer-style-text {
+            position:absolute;
+            margin-top:-14%;
+            margin-left:6%;
+        }
+        @keyframes fade {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:0.2;
+            }
         }
         .about {
-            margin-top:-105%;
+            margin-top:-75%;
         }
         .footer {
-        top:10250px;
+        top:6100px;
         }
     }
     .container-ombak-air1 {
@@ -2110,7 +3674,11 @@
     .penutupgelombangair13 {
         border-color: rgb(119, 94, 94);
     }
-
+    .teks-gambar-services-1 {
+        position:relative;
+        left:-17%;
+        top:-7%;
+    }
     .tutupbagianlengkungatas1 {
         width: 10px;
         height: 100px;
@@ -2278,7 +3846,7 @@
     }
 
     .gelombangair2 {
-        width: 98.6%;
+        width: 120%;
         height: 100px;
         background-color: aqua;
         position: relative;
@@ -2517,7 +4085,7 @@
         }
 
         to {
-            z-index: 16;
+            z-index:16;
         }
     }
 
@@ -3043,7 +4611,7 @@ letter-spacing: 3px;
     top: 200px;
     z-index: 999;
 }
-.dropbtn {
+/* .dropbtn {
     background-color: transparent;
     color: lime;
     padding: 16px;
@@ -3052,17 +4620,17 @@ letter-spacing: 3px;
     cursor: pointer;
   }
   
-  .dropdown {
+  
     display: inline-block;
     transform:translateX(-630px) translateY(430px);
     background: transparent;
-    position: absolute;
+    position: absolute;.dropdown {
     z-index: 50;
   }
   
   .dropdown-content {
     display: none;
-    position: absolute;
+    position:absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -3074,17 +4642,157 @@ letter-spacing: 3px;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  /* .dropdown-content a:active {background:red;} */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: lightgray;
-  }
+  } */
+.sec-center {
+    position:relative;
+    width:50px;
+    height:0px;
+    text-align: center;
+    background:transparent;
+    z-index:200;
+    top:85%;
+    left:25%;
+}
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+.dropdown:checked + label,
+.dropdown:not(:checked) + label{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 2;
+  height: 50px;
+  transition: all 200ms linear;
+  border-radius: 4px;
+  width: 100px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  text-align: center;
+  border: none;
+  background-color: #ffeba7;
+  cursor: pointer;
+  color: #102770;
+  box-shadow: 0 12px 35px 0 rgba(255,235,167,.15);
+  text-indent:8%;
+}
+.dropdown:checked + label:before,
+.dropdown:not(:checked) + label:before{
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  cursor: auto;
+  pointer-events: none;
+}
+.dropdown:checked + label:before{
+  pointer-events: auto;
+}
+.dropdown:not(:checked) + label .uil {
+  font-size: 24px;
+  margin-left: 10px;
+  transition: transform 200ms linear;
+}
+.dropdown:checked + label .uil {
+  transform: rotate(180deg);
+  font-size: 24px;
+  margin-left: 10px;
+  transition: transform 200ms linear;
+}
+.section-dropdown {
+  position: absolute;
+  padding: 5px;
+  background-color: #111;
+  top: 70px;
+  left: 0;
+  min-width: 100%;
+  border-radius: 4px;
+  display: block;
+  box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 200ms linear;
+}
+.dropdown:checked ~ .section-dropdown{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.section-dropdown:before {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  content: '';
+  display: block;
+  z-index: 1;
+}
+.section-dropdown:after {
+  position: absolute;
+  top: -7px;
+  left: 30px;
+  width:0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent; 
+  border-bottom: 8px solid #111;
+  content: '';
+  display: block;
+  z-index: 2;
+  transition: all 200ms linear;
+}
+.section-dropdown a {
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  margin: 2px 0;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+}
+.section-dropdown a:hover {
+  color: #102770;
+  background-color: #ffeba7;
+}
+.section-dropodown a .uil {
+  font-size: 22px;
+}
 .container-isi {
     border: 5px solid transparent;
     position: absolute;
@@ -3131,15 +4839,15 @@ letter-spacing: 3px;
 .foto-h1  {
     position: absolute;
     margin-top: 25%;
-    margin-left: 40%;
+    margin-left: 41.5%;
     font-size: 50px;
-    width: 100%;
+    width:18%;
 }
 .foto-h2 {
     position: absolute;
     margin-top: 30%;
     margin-left: 15%;
-    width: 100%;
+    width:46%;
     font-size: 45px;
 }
 .perlindunganmata {
@@ -3164,8 +4872,14 @@ letter-spacing: 3px;
 .about-p1 {
     color: black;
 }
+.about-p1,.about-p2 {
+    background:rgb(245, 243, 243);
+}
 a {
     text-decoration: none;
+}
+.my-services {
+    background-image:linear-gradient(to right,#3283a8,lightblue,white);
 }
 .my-services-p1 {
     position:relative;
@@ -3204,9 +4918,9 @@ a {
     /* left:37%; */
     /* margin-top:50%; */
 }
-hr{
-    background:red;
+hr {
     position:relative;
+    width:5%;
 }
 .garis-gambar-website-portfolio {
     top:0%;
@@ -3218,7 +4932,7 @@ hr{
     top:120%;
 }
 .teks-gambar-website-portfolio {
-    position:relative;
+    position:absolute;
     /* top:114%; */
     font-size:15px;
 }
@@ -3273,7 +4987,8 @@ body {
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
+  padding: 70px 0;
+  padding-bottom:30px;
   position:absolute;
   right:0;
   left:0;
@@ -3287,18 +5002,15 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
-.footer-content p {
-  margin: 0;
+.footer-content p,ul {
+  margin-top:-27%;
 }
-
 .social-icons {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 10px;
 }
-
 .social-icons li a img {
   width: 30px;
   height: 30px;
@@ -3330,6 +5042,7 @@ body {
 }
 
 .box {
+    position:relative;
     width: 400px;
     height: 400px;
     margin-left:40%;
@@ -3387,6 +5100,27 @@ body {
     to {
         transform: rotateY(360deg);
     }
+}
+.komentar_kritik_saran {
+    background-image:linear-gradient(to right,lightgray,blanchedalmond,wheat);
+    transform:translateY(10PX);
+}
+.komentar_kritik_saran label {
+    font-family:arial;
+}
+.komentar_kritik_saran button {
+    background:pink;
+    cursor:pointer;
+}
+.judulform {
+    margin-left:1%;
+    color:pink;
+    font-size:20px;
+}
+.text-footer {
+    opacity:0.7;
+    color:black;
+    text-shadow:0 0 10px lime;
 }
 </style>
 </head>
@@ -3464,18 +5198,19 @@ body {
     </div>
     <div class="container-atas">
         <canvas id="canvas"></canvas>
-        <div class="dropdown">
-            <!-- <button onclick='ChangeToDark()' id="ChangeToDark">Background gelap</button>
-            <button onclick='ChangeToLight()' id="ChangeToLight">Background terang</button> -->
-             <button style='background:transparent;transform:scale(0.1);border:none;position:absolute;top:-150px;left:20px;' id="darkThemeButton"><img style='transform:scale(1);' src="bulan sabit.png" alt="Bulan sabit" border="0"></button>
-    <button style='color:black;background:transparent;transform:scale(0.1);border:none;position:absolute;top:-165px;left:-40px;' id="lightThemeButton"><img style='transform:scale(1);' src="matahari.png" alt="matahari" border='0'></button>
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-            <a href="Teknologi.html">Website Teknologi</a>
-            <a href="Kesehatan.html">Website Kesehatan</a>
-            <a href="Olahraga.html">Website Olahraga</a>
-            <a href='Ekonomi.html'>Website Ekonomi</a>
-            </div>
+        <div class="sec-center">
+            <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+	  	<label class="for-dropdown" for="dropdown">Dropdown<i class="uil uil-arrow-down"></i></label>
+          <div class="section-dropdown"> 
+            <a href="Kesehatan.html">Kesehatan<i class="uil uil-arrow-right"></i></a>
+            <a href="Ekonomi.html">Ekonomi<i class="uil uil-arrow-right"></i></a>
+            <a href="Teknologi.html">Teknologi<i class="uil uil-arrow-right"></i></a>
+      <a href="Olahraga.html">Olahraga<i class="uil uil-arrow-right"></i></a>
+        </div>
+    </div>
+    <div class='container-theme'>
+        <button class='night-theme' style='background:transparent;transform:scale(0.1);border:none;position:absolute;top:-150px;left:20px;' id="darkThemeButton"><img style='transform:scale(1);' src="bulan sabit.png" alt="Bulan sabit" border="0"></button>
+        <button class='day-theme' style='color:black;background:transparent;transform:scale(0.1);border:none;position:absolute;top:-165px;left:-40px;' id="lightThemeButton"><img style='transform:scale(1);' src="matahari.png" alt="matahari" border='0'></button>
         </div>
         <div class="tulisanbercahaya">Welcome to my Portfolio</div>
         <div class="jam-digital-malasngoding">
@@ -3547,11 +5282,13 @@ body {
         </div>
     </div>
     <div class="container-isi">
+        <span class="foto-style-text">Please Scroll</span>
         <div class="identitas-diri">
         <div class='foto'></div> 
-        <h1 class='foto-h1'>Hello, I'm Bryan</h1>
+        <h1 class='foto-h1'>Hello, I'm <span class="spasi">Bryan</span></h1>
         <h2 class='foto-h2'>Portofolio | Bryan Phillip | Front End Developer</h2>
     </div>
+    <span class="about-style-text">Enjoy the view<br>of my portfolio<br>website</span>
         <div class="isi">
         <div class="about">
             <h3 class='about-h3' style="font-size: 40px;">About Me</h3>
@@ -3579,79 +5316,202 @@ body {
                 The Back-End Development is because my understanding has not been able to digest it. this is what made me change my goals from
                 wanted to be a Programmer changed to wanted to be a Front-End Developer.
             </p>
-            <div class="box">
+            <!-- <div class="box">
                 <div class="face front">Elon Musk<img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="Face 1"></div>
                 <div class="face back">Steve Jobs<img src="https://cdn0-production-images-kly.akamaized.net/g0VFyFA4vGgC6s-8W0tYMEvl2kc=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/998388/original/015166400_1442992023-stevejobs1.jpg" alt="Face 2"></div>
                 <div class="face left">Bill Gates<img src="https://live.staticflickr.com/7154/6767407465_8d459666cd_b.jpg" alt="Face 3"></div>
                 <div class="face right">Mark Zuckerberg<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" alt="Face 4"></div>
-            </div>
-            <span style="font-family:times new roman;Font-size:40px;color:lime;filter:drop-shadow(0 0 5px black);margin-left:35%;margin-top:2%;">They are my idols</span>
+            </div> -->
+            <!-- <span class='text-idol' style="font-family:times new roman;Font-size:40px;color:lime;filter:drop-shadow(0 0 5px black);margin-left:35%;margin-top:2%;">They are my idols</span> -->
         </div>
+        <span class="contacts-style-text">Now, here's my Contacts</span>
         <div class="contacts" style="position:relative;">
+            <div class="container-star-first">
+                <div class="star-1"></div>
+                <div class="star-2"></div>
+                <div class="star-3"></div>
+                <div class="star-4"></div>
+                <div class="star-5"></div>
+                <div class="star-6"></div>
+                <div class="star-7"></div>
+                <div class="star-8"></div>
+                <div class="star-9"></div>
+                <div class="star-10"></div>
+                <div class="star-11"></div>
+                <div class="star-12"></div>
+                <div class="star-13"></div>
+                <div class="star-14"></div>
+                <div class="star-15"></div>
+                <div class="star-16"></div>
+                <div class="star-17"></div>
+                <div class="star-18"></div>
+                <div class="star-19"></div>
+                <div class="star-20"></div>
+                <div class="star-21"></div>
+                <div class="star-22"></div>
+                <div class="star-23"></div>
+                <div class="star-24"></div>
+                <div class="star-25"></div>
+                <div class="star-26"></div>
+                <div class="star-27"></div>
+                <div class="star-28"></div>
+                <div class="star-29"></div>
+                <div class="star-30"></div>
+                <div class="star-31"></div>
+                <div class="star-32"></div>
+                <div class="star-33"></div>
+                <div class="star-34"></div>
+                <div class="star-35"></div>
+              </div>
+              <div class="container-star-second">
+                <div class="star-1"></div>
+                <div class="star-2"></div>
+                <div class="star-3"></div>
+                <div class="star-4"></div>
+                <div class="star-5"></div>
+                <div class="star-6"></div>
+                <div class="star-7"></div>
+                <div class="star-8"></div>
+                <div class="star-9"></div>
+                <div class="star-10"></div>
+                <div class="star-11"></div>
+                <div class="star-12"></div>
+                <div class="star-13"></div>
+                <div class="star-14"></div>
+                <div class="star-15"></div>
+                <div class="star-16"></div>
+                <div class="star-17"></div>
+                <div class="star-18"></div>
+                <div class="star-19"></div>
+                <div class="star-20"></div>
+                <div class="star-21"></div>
+                <div class="star-22"></div>
+                <div class="star-23"></div>
+                <div class="star-24"></div>
+                <div class="star-25"></div>
+                <div class="star-26"></div>
+                <div class="star-27"></div>
+                <div class="star-28"></div>
+                <div class="star-29"></div>
+                <div class="star-30"></div>
+                <div class="star-31"></div>
+                <div class="star-32"></div>
+                <div class="star-33"></div>
+                <div class="star-34"></div>
+                <div class="star-35"></div>
+              </div>
+            <div class="first-circle">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+                <div class="circle6"></div>
+                <div class="circle7"></div>
+                <div class="circle8"></div>
+                <div class="circle9"></div>
+                <div class="circle10"></div>
+            </div>
+            <div class="second-circle">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+                <div class="circle6"></div>
+                <div class="circle7"></div>
+                <div class="circle8"></div>
+                <div class="circle9"></div>
+                <div class="circle10"></div>
+            </div>
+            <div class="third-circle">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+                <div class="circle6"></div>
+                <div class="circle7"></div>
+                <div class="circle8"></div>
+                <div class="circle9"></div>
+                <div class="circle10"></div>
+            </div>
             <tulisan-contacts-merah>They<br>are<br>my<br>Social<br>Media</tulisan-contacts-merah>
             <tulisan-contacts-biru>Use<br>them<br>to<br>contact<br>me</tulisan-contacts-biru>
             <tulisan-contacts-hijau>Glad<br>to<br>hear<br>from<br>you</tulisan-contacts-hijau><background-biru></background-biru>
             <background-merah></background-merah> 
             <h3 class='contacts-h3' style="font-size:40px;position:relative;"><br><contacts>C<br><o>o</o><br><n>n</n><br><t>t</t><br><a>a</a><br><c>c</c><br><t>t</t><br><s>s</s></contacts></h3>
                 <img class='Instagram' style="transform:scale(0.1);position:relative;margin-left:-17%;margin-top:-20%;" src="Instagram.png" alt="Logo instagram">
-                <a class='teks-instagram-logo' href='https://www.instagram.com/raxcode0101/' style='position:absolute;' target='blank'>Instagram</a>
+                <a class='teks-instagram-logo' href='https://www.instagram.com/raxcode0101/' style='position:absolute;color:yellow;' target='blank'>Instagram</a>
                 <img class='Facebook' style="transform:scale(0.05);position:relative;left:-37%;margin-top:-62%;" src='Facebook.png' alt="Logo facebook">
-                <a class='teks-facebook-logo' href='https://www.facebook.com/profile.php?id=100089730193646' style='position:absolute;' target='blank'>Facebook</a>
+                <a class='teks-facebook-logo' href='https://www.facebook.com/profile.php?id=100089730193646' style='position:absolute;color:yellow;' target='blank'>Facebook</a>
                 <img class='Twitter' style="transform:scale(0.25);position:relative;margin-left:-92%;margin-top:-22.5%;" src='Twitter.png' alt="Logo twitter">
-                <a class='teks-twitter-logo' href='https://twitter.com/RCod17597091' style='position:absolute;' target='blank'>Twitter</a>
+                <a class='teks-twitter-logo' href='https://twitter.com/RCod17597091' style='position:absolute;color:yellow;' target='blank'>Twitter</a>
                 <img class='Youtube' style="transform:scale(0.1);position:relative;margin-top:-69%;margin-left:-43%;" src='Youtube.png' alt="Logo youtube">
-                <a class='teks-youtube-logo' href='https://www.youtube.com/channel/UCILrabuFIEG7gsZSp0Sf78A' style='position:absolute;' target='blank'>Youtube</a></span>
+                <a class='teks-youtube-logo' href='https://www.youtube.com/channel/UCILrabuFIEG7gsZSp0Sf78A' style='position:absolute;color:yellow;' target='blank'>Youtube</a></span>
         </div>
+        <span class="my-services-style-text">Next, my services</span>
         <div class="my-services">
+            <br>
             <h3 class='my-services-h3' style='font-size:40px;'>My Services/Projects</h3>
             <img class='gambar-my-services' style='position:relative;left:3%;margin-top:-1%;transform:scale(0.6);' src='Web Development.jpg' alt="gambar web development">
-            <span style='position:relative;left:-17%;top:-7%;' class='teks-gambar-services-1'>Web Front-End Development</span>
+            <span class='teks-gambar-services-1'>Web Front-End Development</span>
             <div class="container-deskripsi-web-front-end">
             <p class='my-services-p1'>
                 The first project is web Front-End Development. This Front-End-based web uses HTML, CSS, and Javascript programming languages. HTML as website framework, CSS as website appearance/style, and Javascript as action or UX (User Experience).
                 Example:
             </p>
-            <br>
-            <img class='Gambar-website-portfolio-home' src='Home-website-portfolio.png' alt='Gambar-website-portfolio-home'>
             <br><br><br><br>
-            <img class='Gambar-website-portfolio-tentang' src='tentang-website-portfolio.png' alt='Gambar-website-portfolio-tentang'>
-            <br><br><br><br>
-            <img class='Gambar-website-portfolio-kontak' src='kontak-website-portfolio.png' alt='Gambar-website-portfolio-kontak'>
-            <br><br><br><br>
-            <span class='teks-gambar-website-portfolio'>Website Portfolio</span>
             <hr class='hr garis-gambar-website-portfolio' style='background:red;'>
-            <br><br><br><br><br>
-            <img class='Gambar-website-company-home' src='home-website-company.png' alt='Gambar-website-company-home'>
+            <span class='teks-gambar-website-portfolio'>Website Portfolio</span>
+            <img class="Gambar-website-portfolio-home" src="Home-website-portfolio.png" alt="Gambar-website-portfolio-home">
             <br><br><br><br>
-            <img class='Gambar-website-company-tentang' src='tentang-website-company.png' alt='Gambar-website-company-tentang'>
+            <img class='Gambar-website-portfolio-about' src='tentang-website-portfolio.png' alt='Gambar-website-portfolio-about'>
             <br><br><br><br>
-            <img class='Gambar-website-company-layanan' src='layanan-website-company.png' alt='Gambar-website-company-layanan'>
+            <img class='Gambar-website-portfolio-contact' src='kontak-website-portfolio.png' alt='Gambar-website-portfolio-contact'>
+            <br><br><br><br>
+            <img class="Gambar-website-portfolio-services" src="Layanan-website-portfolio-1.png" alt="Gambar-website-portfolio-service1">
+            <br><br><br><br>
+            <img class="Gambar-website-portfolio-services" src="Layanan-website-portfolio-2.png" alt="Gambar-website-portfolio-service2">
+            <br><br><br><br>
+            <img class="Gambar-website-portfolio-services" src="Layanan-website-portfolio-3.png" alt="Gambar-website-portfolio-service3">
             <br><br><br><br>
             <span class='teks-gambar-website-company'>Website Company</span>
             <hr class='hr garis-gambar-website-company' style='background:red;'>
-            <br><br><br><br><br>
+            <img class='Gambar-website-company-home' src='home-website-company.png' alt='Gambar-website-company-home'>
+            <br><br><br><br>
+            <img class='Gambar-website-company-tentang' src='tentang-kami-website-company.png' alt='Gambar-website-company-tentang'>
+            <br><br><br><br>
+            <img class='Gambar-website-company-menu' src='menu-kami-website-company.png' alt='Gambar-website-company-menu'>
+            <br><br><br><br>
+            <img class="Gambar-website-company-produk" src="produk-kami-website-company.png" alt="Gambar-website-company-produk">
+            <br><br><br><br>
+            <img class='Gambar-website-company-k-f' src='kontak,footer-website-company.png' alt='Gambar-website-company-produk,kontak,footer'>
+            <br><br><br><br>
+            <span class='teks-gambar-website-wedding'>Website Wedding</span>
+            <hr class='hr garis-gambar-website-wedding' style='background:red;'>
             <img class='Gambar-website-wedding-home' src='Home-website-pernikahan.png' alt='Gambar-website-wedding-home'>
             <br><br><br><br>
             <img class='Gambar-website-wedding-mempelai' src="mempelai-website-pernikahan.png" alt='Gambar-website-wedding-mempelai'>
             <br><br><br><br>
             <img class='Gambar-website-wedding-undangan' src="undangan-website-pernikahan.png" alt='Gambar-website-wedding-undangan'>
             <br><br><br><br>
-            <img class='Gambar-website-wedding-doa&ucapan' src="doa dan ucapan-website-pernikahan.png" alt='Gambar-website-wedding-doa&ucapan'>
+            <img class='Gambar-website-wedding-doa-dan-ucapan' src="doa dan ucapan-website-pernikahan.png" alt='Gambar-website-wedding-doa&ucapan'>
             <br><br><br><br>
-            <span class='teks-gambar-website-wedding'>Website Wedding</span>
-            <hr class='hr garis-gambar-website-wedding' style='background:red;'>
-            <br><br><br><br><br>
         </div>
         </div>
+        <span class="form-style-text">Don't forget to fill in the form below</span>
+        <br><br><br><span class='judulform'>Fill The Form</span>
         <div class="komentar_kritik_saran">
             <form action="komentar-MyPortfolio.php" method="post">
-                <label for="name">Nama:</label>
-                <input placeholder="Ketikkan nama anda" type='name' id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input placeholder="Ketikkan email anda" type="email" id="email" name="email" required>
-                <label for="comment">Komentar:</label>
-                <textarea placeholder='Ketikkan komentar anda' id="comment" name="comment" required></textarea>
-                <button type="submit">Kirim</button>
+                <br>
+                <label for="name">&nbsp;Name:</label>
+                <input placeholder="Type your name" type='name' id="name" name="name" required>
+                <label for="email">&nbsp;Email:</label>
+                <input placeholder="Type your email" type="email" id="email" name="email" required>
+                <label for="comment">&nbsp;Comment:</label>
+                <textarea placeholder='Wanna comment?' id="comment" name="comment" required></textarea>
+                <button style='margin-left:10%;' type="submit">Kirim</button>
             </form>      
         </div>
         <!-- <div style='position:relative;margin-top:10%;' class="my-work">
@@ -3852,11 +5712,21 @@ init();
 //     body.style.color='white';
 //   }
 // })
+const foto_style_text=document.querySelector('.foto-style-text');
+const about_style_text=document.querySelector('.about-style-text');
+const contacts_style_text=document.querySelector('.contacts-style-text');
+const my_services_style_text=document.querySelector('.my-services-style-text');
+const form_style_text=document.querySelector('.form-style-text');
+const footer_style_text=document.querySelector('.footer-style-text');
+const spasi=document.querySelector('.spasi');
 const aboutp1=document.querySelector('.about-p1');
-// const aboutp2=document.querySelector('.about-p2');
+const aboutp2=document.querySelector('.about-p2');
 const about=document.querySelector('.about');
 const myservicesp1=document.querySelector('.my-services-p1');
 const p=about.querySelector('p');
+const span=document.querySelector('.foto-h1 span')
+const contacts=document.querySelector('.contacts');
+const contacts_h3=document.querySelector('.contacts-h3');
 // const containerIsi=document.querySelector('.container-isi');
 
 // function ChangeToDark() {
@@ -3881,7 +5751,17 @@ function enableDarkTheme() {
     body.style.backgroundColor = 'black'; // Ubah latar belakang menjadi gelap
     body.style.color = '#fff'; // Ubah warna teks menjadi putih
     aboutp1.style.color='white';
+    aboutp1.style.backgroundColor='gray';
+    aboutp2.style.backgroundColor='gray';
+    span.style.color='white';
     myservicesp1.style.color='black';
+    foto_style_text.style.color='white';
+    about_style_text.style.color='white';
+    contacts_style_text.style.color='white'
+    contacts_h3.style.color='black';
+    my_services_style_text.style.color='white';
+    form_style_text.style.color='white';
+    footer_style_text.style.color='white';
 }
 
 // Function untuk mengubah ke tema terang
@@ -3889,6 +5769,15 @@ function enableLightTheme() {
     body.style.backgroundColor = '#fff'; // Kembalikan latar belakang menjadi terang
     body.style.color = 'black'; // Kembalikan warna teks menjadi gelap
     p.style.color='black';
+    aboutp1.style.backgroundColor='rgb(245, 243, 243)';
+    aboutp2.style.backgroundColor='rgb(245, 243, 243)';
+    spasi.style.color='black';
+    foto_style_text.style.color='black';
+    about_style_text.style.color='black';
+    contacts_style_text.style.color='black';
+    my_services_style_text.style.color='black';
+    form_style_text.style.color='black';
+    footer_style_text.style.color='black';
 }
 
 // Tambahkan event listener untuk tombol tema gelap
@@ -3906,7 +5795,9 @@ lightThemeButton.addEventListener('click', enableLightTheme);
             <li><a href="https://twitter.com/RCod17597091"><img src="Twitter.png" alt="Twitter"></a></li>
             <li><a href="https://www.instagram.com/raxcode0101/"><img src="Instagram.png" alt="Instagram"></a></li>
           </ul>
+          <span class='text-footer'>Footer</span>
         </div>
+        <span class="footer-style-text">See You..</span>
       </footer>
     </div>
 </body>
